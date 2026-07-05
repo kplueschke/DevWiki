@@ -1,7 +1,7 @@
 const wikiData = [
   {
     "id": "sec1",
-    "nav_title": "1) 🛠️ Dev & Coding‑Begriffe",
+    "nav_title": "🛠️ Dev & Coding‑Begriffe",
     "sec_title": "Allgemeiner Dev-Jargon",
     "cards": [
       {
@@ -120,7 +120,7 @@ const wikiData = [
   },
   {
     "id": "sec2",
-    "nav_title": "2) 🏛️ OOP‑Prinzipien & Klassen",
+    "nav_title": "🏛️ OOP‑Prinzipien & Klassen",
     "sec_title": "OOP – Objektorientierte Programmierung",
     "cards": [
       {
@@ -307,7 +307,7 @@ const wikiData = [
   },
   {
     "id": "sec3",
-    "nav_title": "3) 🧩 Datentypen & Strukturen",
+    "nav_title": "🧩 Datentypen & Strukturen",
     "sec_title": "Datentypen",
     "cards": [
       {
@@ -546,7 +546,7 @@ const wikiData = [
   },
   {
     "id": "sec4",
-    "nav_title": "4) 🎨 Clean Code & Naming",
+    "nav_title": "🎨 Clean Code & Naming",
     "sec_title": "🎨 Clean Code & Naming",
     "cards": [
       {
@@ -591,7 +591,7 @@ const wikiData = [
   },
   {
     "id": "sec5",
-    "nav_title": "5) 🔧 Git & Versionierung",
+    "nav_title": "🔧 Git & Versionierung",
     "sec_title": "Git & Versionskontrolle",
     "cards": [
       {
@@ -678,7 +678,7 @@ const wikiData = [
   },
   {
     "id": "sec6",
-    "nav_title": "6) 🐞 Debugging & Tests",
+    "nav_title": "🐞 Debugging & Tests",
     "sec_title": "Debugging & Tests",
     "cards": [
       {
@@ -769,7 +769,7 @@ const wikiData = [
   },
   {
     "id": "sec7",
-    "nav_title": "7) 🏛️ Architektur",
+    "nav_title": "🏛️ Architektur",
     "sec_title": "Software-Architektur",
     "cards": [
       {
@@ -996,7 +996,7 @@ const wikiData = [
   },
   {
     "id": "sec8",
-    "nav_title": "8) 🌐 Web-Entwicklung",
+    "nav_title": "🌐 Web-Entwicklung",
     "sec_title": "Web-Entwicklung",
     "cards": [
       {
@@ -1243,7 +1243,7 @@ const wikiData = [
   },
   {
     "id": "sec9",
-    "nav_title": "9) 🚦 HTTP-Statuscodes",
+    "nav_title": "🚦 HTTP-Statuscodes",
     "sec_title": "HTTP-Statuscodes",
     "cards": [
       {
@@ -1294,7 +1294,7 @@ const wikiData = [
   },
   {
     "id": "sec10",
-    "nav_title": "10) 🗄️ Datenbanken",
+    "nav_title": "🗄️ Datenbanken",
     "sec_title": "Datenbanken",
     "cards": [
       {
@@ -1541,7 +1541,7 @@ const wikiData = [
   },
   {
     "id": "sec11",
-    "nav_title": "11) ☁️ Cloud & Container",
+    "nav_title": "☁️ Cloud & Container",
     "sec_title": "Cloud & Container",
     "cards": [
       {
@@ -1708,7 +1708,7 @@ const wikiData = [
   },
   {
     "id": "sec12",
-    "nav_title": "12) 🛡️ Cyber‑Security",
+    "nav_title": "🛡️ Cyber‑Security",
     "sec_title": "Sicherheit (Cyber-Security)",
     "cards": [
       {
@@ -1919,7 +1919,7 @@ const wikiData = [
   },
   {
     "id": "sec13",
-    "nav_title": "13) 🚀 Performance",
+    "nav_title": "🚀 Performance",
     "sec_title": "Performance & Skalierung",
     "cards": [
       {
@@ -2138,7 +2138,7 @@ const wikiData = [
   },
   {
     "id": "sec14",
-    "nav_title": "14) 🔁 Async & Workflows",
+    "nav_title": "🔁 Async & Workflows",
     "sec_title": "Nebenläufigkeit & Asynchronität",
     "cards": [
       {
@@ -2361,7 +2361,7 @@ const wikiData = [
   },
   {
     "id": "sec15",
-    "nav_title": "15) 💠 MAUI Toolkit & Mobile",
+    "nav_title": "💠 MAUI Toolkit & Mobile",
     "sec_title": "MAUI & Mobile",
     "cards": [
       {
@@ -2609,7 +2609,7 @@ const wikiData = [
   },
   {
     "id": "sec16",
-    "nav_title": "16) 📁 Dateitypen & Formate",
+    "nav_title": "📁 Dateitypen & Formate",
     "sec_title": "Dateitypen & Formate",
     "cards": [
       {
@@ -2836,7 +2836,7 @@ const wikiData = [
   },
   {
     "id": "sec17",
-    "nav_title": "17) 🐳 Docker Befehle",
+    "nav_title": "🐳 Docker Befehle",
     "sec_title": "Docker Befehle",
     "cards": [
       {
@@ -2867,7 +2867,7 @@ const wikiData = [
   },
   {
     "id": "sec18",
-    "nav_title": "18) 🪟 Windows Shortcuts",
+    "nav_title": "🪟 Windows Shortcuts",
     "sec_title": "Windows System Shortcuts",
     "cards": [
       {
@@ -2898,7 +2898,7 @@ const wikiData = [
   },
   {
     "id": "sec19",
-    "nav_title": "19) 🧠 Visual Studio Shortcuts",
+    "nav_title": "🧠 Visual Studio Shortcuts",
     "sec_title": " Visual Studio Shortcuts",
     "cards": [
       {
@@ -2947,7 +2947,7 @@ const wikiData = [
   },
   {
     "id": "sec20",
-    "nav_title": "20) 💥 CMD & PowerShell",
+    "nav_title": "💥 CMD & PowerShell",
     "sec_title": "Terminal & Shell Shortcuts",
     "cards": [
       {
@@ -2978,7 +2978,7 @@ const wikiData = [
   },
   {
     "id": "sec23",
-    "nav_title": "23) 🧩 Tech‑Analogien",
+    "nav_title": "🧩 Tech‑Analogien",
     "sec_title": "Modelle & Analogien",
     "cards": [
       {
@@ -3193,7 +3193,7 @@ const wikiData = [
   },
   {
     "id": "sec24",
-    "nav_title": "24) 🤡 Developer-Jokes",
+    "nav_title": "🤡 Developer-Jokes",
     "sec_title": "Humor & Slang",
     "cards": [
       {
