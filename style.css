@@ -1,0 +1,145 @@
+
+        :root {
+            --sidebar-w: 300px;
+            --primary: #3b82f6;
+            --bg: #0f172a;
+            --content-bg: #f8fafc;
+            --card: #ffffff;
+            --text-dark: #1e293b;
+            --accent: #38bdf8;
+        }
+        * { box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: var(--content-bg); color: var(--text-dark); margin: 0; display: flex; height: 100vh; overflow: hidden; }
+
+        /* Sidebar Navigation */
+        nav { width: var(--sidebar-w); background: var(--bg); height: 100%; padding: 25px; overflow-y: auto; color: #f1f5f9; flex-shrink: 0; border-right: 1px solid #1e293b; }
+        nav h2 { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); margin: 25px 0 15px; border-bottom: 1px solid #1e293b; padding-bottom: 5px; }
+        nav ul { list-style: none; padding: 0; }
+        nav a { color: #94a3b8; text-decoration: none; display: block; padding: 10px; border-radius: 8px; font-size: 0.9rem; transition: 0.2s; cursor: pointer; margin-bottom: 4px; }
+        nav a:hover { background: #495c7c; color: white;   transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);}
+        nav a.active { background: var(--primary); color: white; font-weight: bold; }
+
+        /* Main Content */
+        main { flex: 1; overflow-y: auto; padding: 40px 60px; display: flex; flex-direction: column; }
+        .header-area { margin-bottom: 30px; }
+        h1 { font-size: 2rem; margin: 0; color: #0f172a; }
+        .search-box { width: 100%; padding: 12px 20px; border-radius: 30px; border: 2px solid #e2e8f0; font-size: 1rem; outline: none; margin-top: 15px; }
+
+        /* SPA Logic */
+        .content-section { display: none; animation: fadeIn 0.2s ease; }
+        .content-section.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+
+        .card[onclick] {
+        cursor: pointer;
+        }
+
+        .section-title { font-size: 1.6rem; color: var(--primary); margin-bottom: 25px; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; text-transform: uppercase; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+        .card { background: var(--card); padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .term { font-weight: bold; color: var(--primary); display: block; margin-bottom: 8px; text-transform: uppercase; font-size: 0.85rem; }
+        .desc { font-size: 0.9rem; line-height: 1.5; color: #475569; }
+
+
+        .content-section[style*="block"] .section-title {
+        background: #e2e8f0;
+        padding: 5px 15px;
+        border-radius: 5px;
+        }
+
+
+        /* CARDS KLICKBAR PLUS PDF */
+        /* Das Modal-Hintergrund */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0; top: 0; width: 100%; height: 100%;
+            background-color: rgba(0,0,0,0.85); /* Dunkler Hintergrund */
+            backdrop-filter: blur(5px); /* Schicker Unschärfe-Effekt */
+        }
+
+        /* Der Container für das PDF */
+        .modal-content {
+            position: relative;
+            background-color: #fff;
+            margin: 2% auto;
+            width: 90%;
+            height: 90%;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Der Schließen-Button (X) */
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 35px;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+            z-index: 10001;
+        }
+
+
+
+                .close-btn:hover { color: #ff0000; }
+
+        #pdfFrame { width: 100%; height: 100%; border: none; }
+
+
+
+/* Mobile Navigation Toggle Button */
+.menu-toggle {
+    display: none;
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        left: -100%;
+        width: 250px;
+        transition: left 0.3s ease;
+        z-index: 999;
+        padding-top: 60px; /* Space for toggle button */
+        box-shadow: 2px 0 10px rgba(0,0,0,0.5);
+    }
+
+    nav.open {
+        left: 0;
+    }
+
+    main {
+        padding: 60px 20px 20px 20px; /* Space for toggle button */
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
