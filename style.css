@@ -54,6 +54,7 @@
         .term { font-weight: 600; color: var(--primary); background: rgba(88, 166, 255, 0.1); padding: 2px 8px; border-radius: 4px; display: inline-block; margin-bottom: 10px; font-size: 0.8rem; }
 
         .desc { font-size: 0.85rem; line-height: 1.5; color: var(--text-muted); }
+        .desc b { color: var(--primary); font-family: 'JetBrains Mono', monospace; font-weight: 600; }
 
         .content-section[style*="block"] .section-title {
             background: transparent;
