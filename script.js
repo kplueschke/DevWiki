@@ -40,7 +40,7 @@ function renderContent() {
             } else {
                 mainHtml += `<div class="card">`;
             }
-            mainHtml += `<span class="term">${card.term}</span>${card.desc}</div>`;
+            mainHtml += `<span class="term">${card.term}</span><div class="desc">${card.desc}</div></div>`;
         });
 
         mainHtml += `</div></div>`;
