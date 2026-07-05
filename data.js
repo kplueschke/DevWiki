@@ -115,6 +115,10 @@ const wikiData = [
       {
         "term": "Yak Shaving",
         "desc": "Ungeplante Nebenaufgaben erledigen."
+      },
+      {
+        "term": "CI/CD",
+        "desc": "Continuous Integration / Continuous Deployment: Automatisierung von Tests und Auslieferung."
       }
     ]
   },
@@ -302,6 +306,14 @@ const wikiData = [
       {
         "term": "Virtuelle Methode",
         "desc": "Kann in Unterklassen überschrieben werden."
+      },
+      {
+        "term": "SOLID",
+        "desc": "Fünf Prinzipien objektorientierten Designs: Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, Dependency Inversion."
+      },
+      {
+        "term": "Design Patterns",
+        "desc": "Bewährte Lösungsschablonen für wiederkehrende Design-Probleme (z.B. Singleton, Observer)."
       }
     ]
   },
@@ -541,6 +553,10 @@ const wikiData = [
       {
         "term": "XML Node",
         "desc": "Einzelner XML‑Elementknoten."
+      },
+      {
+        "term": "Graph",
+        "desc": "Eine Sammlung von Knoten (Vertices) und deren Verbindungen (Edges)."
       }
     ]
   },
@@ -586,6 +602,14 @@ const wikiData = [
         "term": "XML Dokumentation Tags ",
         "desc": "C# /// TagsListe",
         "onclick": "openPDF('XMLDokumentationsTags.pdf')"
+      },
+      {
+        "term": "KISS",
+        "desc": "Keep It Simple, Stupid: Lösungen sollten so einfach wie möglich gehalten werden."
+      },
+      {
+        "term": "YAGNI",
+        "desc": "You Aren't Gonna Need It: Implementiere keine Features im Voraus, wenn sie noch nicht benötigt werden."
       }
     ]
   },
@@ -685,6 +709,14 @@ const wikiData = [
       {
         "term": "Tag",
         "desc": "Ein fester, benannter Marker in der Historie, meist zur Kennzeichnung von Release-Versionen."
+      },
+      {
+        "term": "git stash",
+        "desc": "Speichert unvollendete Änderungen temporär ab, um ein sauberes Arbeitsverzeichnis zu erhalten."
+      },
+      {
+        "term": "git rebase",
+        "desc": "Integriert Änderungen aus einem Branch in einen anderen, schreibt aber die Commit-Historie neu (linear)."
       }
     ]
   },
@@ -776,6 +808,10 @@ const wikiData = [
       {
         "term": "Watch",
         "desc": "Überwachungstool im Debugger, das den Wert bestimmter Variablen permanent anzeigt."
+      },
+      {
+        "term": "Mocking",
+        "desc": "Das Simulieren des Verhaltens echter Objekte in Unit-Tests (z.B. Datenbank-Verbindungen)."
       }
     ]
   },
@@ -1003,6 +1039,14 @@ const wikiData = [
       {
         "term": "Visitor Pattern",
         "desc": "Trennt Operationen von Datenstrukturen."
+      },
+      {
+        "term": "Microservices",
+        "desc": "Aufteilen einer großen Anwendung in kleine, unabhängig voneinander laufende Dienste."
+      },
+      {
+        "term": "Serverless",
+        "desc": "Ausführung von Code ohne Server-Management (z.B. AWS Lambda)."
       }
     ]
   },
@@ -1275,6 +1319,22 @@ const wikiData = [
     "sec_title": "HTTP-Statuscodes",
     "cards": [
       {
+        "term": "100 Continue",
+        "desc": "Der Server hat den ersten Teil der Anfrage erhalten und der Client kann fortfahren."
+      },
+      {
+        "term": "101 Switching Protocols",
+        "desc": "Der Server akzeptiert den Protokollwechsel (z. B. auf WebSockets)."
+      },
+      {
+        "term": "102 Processing",
+        "desc": "Der Server bearbeitet die Anfrage, aber es ist noch keine Antwort verfügbar."
+      },
+      {
+        "term": "103 Early Hints",
+        "desc": "Wird verwendet, um HTTP-Header zurückzugeben, bevor die vollständige Serverantwort bereit ist."
+      },
+      {
         "term": "200 OK",
         "desc": "Anfrage erfolgreich bearbeitet."
       },
@@ -1283,8 +1343,40 @@ const wikiData = [
         "desc": "Ressource wurde erfolgreich erstellt."
       },
       {
+        "term": "202 Accepted",
+        "desc": "Anfrage akzeptiert, aber Bearbeitung noch nicht abgeschlossen."
+      },
+      {
+        "term": "203 Non-Authoritative Information",
+        "desc": "Informationen aus dritter Hand (Proxy)."
+      },
+      {
         "term": "204 No Content",
         "desc": "Erfolg, aber keine Daten im Body (z.B. nach Delete)."
+      },
+      {
+        "term": "205 Reset Content",
+        "desc": "Erfolgreich, Client soll die Ansicht zurücksetzen (z.B. Formular leeren)."
+      },
+      {
+        "term": "206 Partial Content",
+        "desc": "Teilweise erfolgreiche Anfrage (wichtig für Video-Streaming oder Download-Resumes)."
+      },
+      {
+        "term": "207 Multi-Status",
+        "desc": "Übermittelt den Status für mehrere unabhängige Operationen."
+      },
+      {
+        "term": "208 Already Reported",
+        "desc": "Die Mitglieder einer WebDAV-Bindung wurden bereits in einer vorherigen Antwort aufgezählt."
+      },
+      {
+        "term": "226 IM Used",
+        "desc": "Der Server hat die GET-Anfrage für die Ressource erfüllt und die Antwort ist eine Darstellung des Ergebnisses einer oder mehrerer Instanz-Manipulationen (IM)."
+      },
+      {
+        "term": "300 Multiple Choices",
+        "desc": "Es stehen mehrere Optionen zur Auswahl."
       },
       {
         "term": "301 Moved Permanently",
@@ -1295,8 +1387,24 @@ const wikiData = [
         "desc": "Ressource wurde temporär an eine andere URL verschoben."
       },
       {
+        "term": "303 See Other",
+        "desc": "Die Antwort ist unter einem anderen URI zu finden (meist nach POST)."
+      },
+      {
         "term": "304 Not Modified",
         "desc": "Ressource hat sich nicht geändert und kann aus dem Cache geladen werden."
+      },
+      {
+        "term": "305 Use Proxy",
+        "desc": "Die angeforderte Ressource ist nur über einen Proxy zugänglich (veraltet)."
+      },
+      {
+        "term": "307 Temporary Redirect",
+        "desc": "Temporäre Umleitung, Methode (GET/POST) darf sich nicht ändern."
+      },
+      {
+        "term": "308 Permanent Redirect",
+        "desc": "Dauerhafte Umleitung, Methode (GET/POST) darf sich nicht ändern."
       },
       {
         "term": "400 Bad Request",
@@ -1307,6 +1415,10 @@ const wikiData = [
         "desc": "Authentifizierung fehlt oder ist ungültig."
       },
       {
+        "term": "402 Payment Required",
+        "desc": "Für zukünftige Nutzung reserviert (ursprünglich für Mikrotransaktionen gedacht)."
+      },
+      {
         "term": "403 Forbidden",
         "desc": "Authentifiziert, aber keine Berechtigung für diese Aktion."
       },
@@ -1315,16 +1427,108 @@ const wikiData = [
         "desc": "Ressource nicht gefunden."
       },
       {
+        "term": "405 Method Not Allowed",
+        "desc": "Die verwendete HTTP-Methode (z.B. POST) ist für diese Ressource nicht erlaubt."
+      },
+      {
+        "term": "406 Not Acceptable",
+        "desc": "Der Server kann keine Antwort senden, die den Accept-Headern des Clients entspricht."
+      },
+      {
+        "term": "407 Proxy Authentication Required",
+        "desc": "Client muss sich beim Proxy authentifizieren."
+      },
+      {
+        "term": "408 Request Timeout",
+        "desc": "Server hat auf die Anfrage des Clients gewartet, aber Zeit überschritten."
+      },
+      {
         "term": "409 Conflict",
         "desc": "Anfrage kollidiert mit aktuellem Serverstatus (z.B. Doublette)."
+      },
+      {
+        "term": "410 Gone",
+        "desc": "Ressource wurde dauerhaft gelöscht und wird nicht zurückkehren."
+      },
+      {
+        "term": "411 Length Required",
+        "desc": "Content-Length Header wird vom Server zwingend erwartet."
+      },
+      {
+        "term": "412 Precondition Failed",
+        "desc": "Eine Vorbedingung in den Headern wurde nicht erfüllt."
+      },
+      {
+        "term": "413 Payload Too Large",
+        "desc": "Die Anfrage (z.B. Dateiupload) ist zu groß für den Server."
+      },
+      {
+        "term": "414 URI Too Long",
+        "desc": "Die URL ist zu lang."
+      },
+      {
+        "term": "415 Unsupported Media Type",
+        "desc": "Das Format der Anfrage wird vom Server nicht unterstützt."
+      },
+      {
+        "term": "416 Range Not Satisfiable",
+        "desc": "Der angeforderte Byte-Bereich der Datei existiert nicht."
+      },
+      {
+        "term": "417 Expectation Failed",
+        "desc": "Server kann der Expect-Header Anforderung nicht entsprechen."
+      },
+      {
+        "term": "418 I'm a teapot",
+        "desc": "April-Scherz der IETF (RFC 2324)."
+      },
+      {
+        "term": "421 Misdirected Request",
+        "desc": "Anfrage an einen Server, der keine Antwort produzieren kann."
+      },
+      {
+        "term": "422 Unprocessable Entity",
+        "desc": "Syntax korrekt, aber semantische Fehler (WebDAV/APIs)."
+      },
+      {
+        "term": "423 Locked",
+        "desc": "Die Ressource ist gesperrt (WebDAV)."
+      },
+      {
+        "term": "424 Failed Dependency",
+        "desc": "Anfrage fehlgeschlagen, da eine vorherige Anfrage scheiterte (WebDAV)."
+      },
+      {
+        "term": "425 Too Early",
+        "desc": "Der Server ist nicht bereit, eine Anfrage zu verarbeiten, die möglicherweise wiederholt wird."
+      },
+      {
+        "term": "426 Upgrade Required",
+        "desc": "Der Client sollte auf ein anderes Protokoll wechseln."
+      },
+      {
+        "term": "428 Precondition Required",
+        "desc": "Der Ursprungsserver erfordert die Bedingung der Anfrage."
       },
       {
         "term": "429 Too Many Requests",
         "desc": "Rate Limit überschritten."
       },
       {
+        "term": "431 Request Header Fields Too Large",
+        "desc": "Die Header-Felder der Anfrage sind zu groß."
+      },
+      {
+        "term": "451 Unavailable For Legal Reasons",
+        "desc": "Ressource gesperrt aus rechtlichen Gründen (z.B. Zensur)."
+      },
+      {
         "term": "500 Internal Error",
         "desc": "Allgemeiner Serverfehler."
+      },
+      {
+        "term": "501 Not Implemented",
+        "desc": "Server unterstützt die erforderliche Funktionalität nicht."
       },
       {
         "term": "502 Bad Gateway",
@@ -1337,6 +1541,30 @@ const wikiData = [
       {
         "term": "504 Gateway Timeout",
         "desc": "Server, der als Proxy/Gateway agiert, erhielt nicht rechtzeitig eine Antwort vom Upstream-Server."
+      },
+      {
+        "term": "505 HTTP Version Not Supported",
+        "desc": "Die verwendete HTTP-Version wird nicht unterstützt."
+      },
+      {
+        "term": "506 Variant Also Negotiates",
+        "desc": "Interner Konfigurationsfehler bei Inhaltsaushandlung."
+      },
+      {
+        "term": "507 Insufficient Storage",
+        "desc": "Server hat keinen Speicherplatz mehr (WebDAV)."
+      },
+      {
+        "term": "508 Loop Detected",
+        "desc": "Endlosschleife bei der Verarbeitung der Anfrage (WebDAV)."
+      },
+      {
+        "term": "510 Not Extended",
+        "desc": "Weitere Erweiterungen der Anfrage sind erforderlich."
+      },
+      {
+        "term": "511 Network Authentication Required",
+        "desc": "Der Client muss sich authentifizieren, um Netzwerkzugriff zu erhalten."
       }
     ]
   },
@@ -1584,6 +1812,10 @@ const wikiData = [
       {
         "term": "Write-Ahead Logging (WAL)",
         "desc": "Änderungen zuerst ins Log, dann ins DB-File."
+      },
+      {
+        "term": "NoSQL",
+        "desc": "Datenbanken für unstrukturierte oder semi-strukturierte Daten (z.B. MongoDB, Redis)."
       }
     ]
   },
@@ -2304,6 +2536,10 @@ const wikiData = [
       {
         "term": "Write Through Cache",
         "desc": "Schreibzugriffe erfolgen gleichzeitig in den Cache und in die Datenbank (höhere Datensicherheit)."
+      },
+      {
+        "term": "Load Balancing",
+        "desc": "Verteilung von Netzwerk- oder Anwendungsverkehr auf mehrere Server."
       }
     ]
   },
@@ -2527,6 +2763,10 @@ const wikiData = [
       {
         "term": "Worker Thread",
         "desc": "Ein Hintergrund-Thread, der rechenintensive Aufgaben übernimmt, ohne die Benutzeroberfläche zu blockieren."
+      },
+      {
+        "term": "Promise",
+        "desc": "Ein Objekt, das den eventuellen Abschluss (oder Fehlschlag) einer asynchronen Operation repräsentiert."
       }
     ]
   },
@@ -3002,6 +3242,10 @@ const wikiData = [
       {
         "term": "ZIP",
         "desc": "Komprimiertes Archiv."
+      },
+      {
+        "term": "Markdown",
+        "desc": "Eine leichtgewichtige Auszeichnungssprache, um Text einfach zu formatieren (z.B. für READMEs)."
       }
     ]
   },
@@ -3053,6 +3297,14 @@ const wikiData = [
       {
         "term": "docker-compose up -d",
         "desc": "Startet die gesamte Umgebung im Hintergrund (Detached)."
+      },
+      {
+        "term": "docker compose",
+        "desc": "Werkzeug zur Definition und Ausführung von Multi-Container-Docker-Anwendungen."
+      },
+      {
+        "term": "docker exec -it",
+        "desc": "Führt einen Befehl (oft eine interaktive Shell) in einem laufenden Container aus."
       }
     ]
   },
@@ -3084,6 +3336,14 @@ const wikiData = [
       {
         "term": "Power User",
         "desc": "<b>Win + X:</b> Schnellzugriffsmenü (Admin-Tools)<br/>\n<b>Win + S:</b> Windows-Suche öffnen<br/>\n<b>Win + Pause:</b> System-Info anzeigen<br/>\n<b>Win + G:</b> Xbox Game Bar (Screen Recording)"
+      },
+      {
+        "term": "Win + Shift + S",
+        "desc": "Öffnet das Snipping Tool für Screenshots."
+      },
+      {
+        "term": "Win + V",
+        "desc": "Öffnet den Zwischenablage-Verlauf."
       }
     ]
   },
@@ -3133,6 +3393,14 @@ const wikiData = [
       {
         "term": "Build & Layout",
         "desc": "<b>Strg+Shift+B:</b> Projektmappe erstellen (Build)<br/>\n<b>Strg+Alt+L:</b> Solution Explorer/Projektmappen-Explorer öffnen<br/>\n<b>Shift+Alt+Enter:</b> Vollbildmodus"
+      },
+      {
+        "term": "Ctrl + K, Ctrl + D",
+        "desc": "Dokument formatieren (Code Formatierung in Visual Studio)."
+      },
+      {
+        "term": "F12",
+        "desc": "Gehe zu Definition (Go to Definition)."
       }
     ]
   },
@@ -3164,6 +3432,30 @@ const wikiData = [
       {
         "term": "Profi-Shortcuts",
         "desc": "<b>Alt + Enter:</b> Vollbildmodus<br/>\n<b>Strg + Shift + C/V:</b> Kopieren/Einfügen<br/>\n<b>&amp;&amp;:</b> Befehle verketten (z.B. <code>cls &amp;&amp; dir</code>)<br/>\n<b>&gt; [Datei.txt]:</b> Output in Datei speichern"
+      },
+      {
+        "term": "Pipes & Weiterleitung",
+        "desc": "<b>| (Pipe):</b> Ausgabe des ersten Befehls als Eingabe für den zweiten nutzen.<br/><b>></b> Datei überschreiben<br/><b>>></b> An Datei anhängen."
+      },
+      {
+        "term": "PowerShell Execution Policy",
+        "desc": "<b>Set-ExecutionPolicy RemoteSigned:</b> Erlaubt die Ausführung von lokalen Skripten.<br/><b>Get-ExecutionPolicy:</b> Aktuelle Richtlinie anzeigen."
+      },
+      {
+        "term": "PowerShell Aliases",
+        "desc": "<b>Get-Alias:</b> Liste aller Abkürzungen anzeigen.<br/>Viele Linux-Befehle (ls, rm, cp, mv) funktionieren als Alias in PowerShell."
+      },
+      {
+        "term": "Netzwerk Tools",
+        "desc": "<b>tracert [Host]:</b> Route zum Zielserver verfolgen (CMD)<br/><b>Test-NetConnection:</b> Pingen & Port prüfen (PowerShell)<br/><b>nslookup [Domain]:</b> DNS-Einträge abfragen"
+      },
+      {
+        "term": "Dateimanagement Erweitert",
+        "desc": "<b>robocopy:</b> Robustes Tool für große Dateikopien und Backups (CMD)<br/><b>mkdir / md:</b> Neuen Ordner erstellen<br/><b>rmdir /s /q:</b> Ordner inkl. Inhalt ohne Nachfrage löschen (CMD)"
+      },
+      {
+        "term": "System & WMI",
+        "desc": "<b>tasklist / taskkill:</b> Prozesse anzeigen/beenden (CMD)<br/><b>Get-WmiObject Win32_BIOS:</b> BIOS Infos abrufen (PS)<br/><b>Get-CimInstance:</b> Moderne Alternative zu WMI (PS)"
       }
     ]
   },
@@ -3590,6 +3882,14 @@ const wikiData = [
       {
         "term": "Works on my Machine Premium Edition",
         "desc": "Der Fehler tritt bei allen auf – außer bei exakt einem Entwickler im Team."
+      },
+      {
+        "term": "Bugs",
+        "desc": "Unerwartete Features."
+      },
+      {
+        "term": "In production",
+        "desc": "Der Ort, an dem sich herausstellt, dass 'works on my machine' nicht genug war."
       }
     ]
   }
