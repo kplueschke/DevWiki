@@ -631,6 +631,10 @@ const wikiData = [
         "desc": "Eine vollständige Kopie eines Repositories auf dem Server (oft für Open Source Beiträge)."
       },
       {
+        "term": "Git Flow",
+        "desc": "Ein Branching-Modell, das Branches für Features, Releases und Hotfixes strikt trennt."
+      },
+      {
         "term": "Git Hooks",
         "desc": "Skripte, die automatisch bei Ereignissen (z. B. vor einem Commit) ausgeführt werden."
       },
@@ -661,6 +665,14 @@ const wikiData = [
       {
         "term": "Repository",
         "desc": "Das gesamte Projektverzeichnis inklusive der kompletten Versionshistorie."
+      },
+      {
+        "term": "Reset",
+        "desc": "Macht Commits rückgängig, wahlweise durch Löschen oder Beibehalten der Änderungen im Arbeitsverzeichnis."
+      },
+      {
+        "term": "Revert",
+        "desc": "Erstellt einen neuen Commit, der die Änderungen eines vorherigen Commits umkehrt."
       },
       {
         "term": "Squash",
@@ -1004,6 +1016,10 @@ const wikiData = [
         "desc": "Strukturmodell bestehend aus Frontend, Backend und Datenbank."
       },
       {
+        "term": "a11y (Accessibility)",
+        "desc": "Barrierefreiheit – Sicherstellen, dass Webseiten für Menschen mit Behinderungen nutzbar sind."
+      },
+      {
         "term": "Bot Protection",
         "desc": "Maßnahmen zur Abwehr automatisierter Angriffe und Scraper."
       },
@@ -1164,6 +1180,10 @@ const wikiData = [
         "desc": "Attribut zum Schutz vor Cross-Site-Request-Forgery (CSRF)."
       },
       {
+        "term": "SEO",
+        "desc": "Search Engine Optimization – Optimierung von Webseiten für Suchmaschinen."
+      },
+      {
         "term": "Server-Sent Events (SSE)",
         "desc": "Einseitiger Push-Kanal vom Server zum Browser für Echtzeit-Updates."
       },
@@ -1220,12 +1240,16 @@ const wikiData = [
         "desc": "HTTP-Header, der dem Cache mitteilt, welche Header-Variationen wichtig sind."
       },
       {
-        "term": "Web Manifest",
-        "desc": "JSON-Datei mit Metadaten zur Installation einer PWA."
+        "term": "Virtual DOM",
+        "desc": "Eine speicherinterne Repräsentation des DOMs (z. B. in React) zur Optimierung von Renderings."
       },
       {
         "term": "Web Components",
         "desc": "Satz von Web-Standards zur Erstellung wiederverwendbarer UI-Elemente."
+      },
+      {
+        "term": "Web Manifest",
+        "desc": "JSON-Datei mit Metadaten zur Installation einer PWA."
       },
       {
         "term": "WebAssembly (WASM)",
@@ -1234,6 +1258,10 @@ const wikiData = [
       {
         "term": "WebAuthn",
         "desc": "Moderner Standard für passwortlose Logins mittels Biometrie oder Sicherheitsschlüssel."
+      },
+      {
+        "term": "WebRTC",
+        "desc": "API für Echtzeitkommunikation (Video, Audio, Daten) direkt im Browser ohne Plugins."
       },
       {
         "term": "WebSockets",
@@ -1257,6 +1285,18 @@ const wikiData = [
       {
         "term": "204 No Content",
         "desc": "Erfolg, aber keine Daten im Body (z.B. nach Delete)."
+      },
+      {
+        "term": "301 Moved Permanently",
+        "desc": "Ressource wurde dauerhaft an eine neue URL verschoben."
+      },
+      {
+        "term": "302 Found",
+        "desc": "Ressource wurde temporär an eine andere URL verschoben."
+      },
+      {
+        "term": "304 Not Modified",
+        "desc": "Ressource hat sich nicht geändert und kann aus dem Cache geladen werden."
       },
       {
         "term": "400 Bad Request",
@@ -1287,8 +1327,16 @@ const wikiData = [
         "desc": "Allgemeiner Serverfehler."
       },
       {
+        "term": "502 Bad Gateway",
+        "desc": "Server, der als Proxy/Gateway agiert, erhielt eine ungültige Antwort vom Upstream-Server."
+      },
+      {
         "term": "503 Service Unavailable",
         "desc": "Server überlastet oder wegen Wartung down."
+      },
+      {
+        "term": "504 Gateway Timeout",
+        "desc": "Server, der als Proxy/Gateway agiert, erhielt nicht rechtzeitig eine Antwort vom Upstream-Server."
       }
     ]
   },
@@ -1540,6 +1588,121 @@ const wikiData = [
     ]
   },
   {
+    "id": "sec_sql",
+    "nav_title": "🛢️ SQL Befehle",
+    "sec_title": "SQL Befehle & Queries",
+    "cards": [
+      {
+        "term": "SELECT",
+        "desc": "Ruft Daten aus einer Datenbank ab."
+      },
+      {
+        "term": "INSERT INTO",
+        "desc": "Fügt neue Datensätze in eine Tabelle ein."
+      },
+      {
+        "term": "UPDATE",
+        "desc": "Aktualisiert bestehende Datensätze in einer Tabelle."
+      },
+      {
+        "term": "DELETE",
+        "desc": "Löscht Datensätze aus einer Tabelle."
+      },
+      {
+        "term": "JOIN",
+        "desc": "Verbindet Zeilen aus zwei oder mehr Tabellen basierend auf einer verknüpften Spalte."
+      },
+      {
+        "term": "INNER JOIN",
+        "desc": "Gibt Datensätze zurück, die in beiden verknüpften Tabellen übereinstimmen."
+      },
+      {
+        "term": "LEFT JOIN",
+        "desc": "Gibt alle Datensätze der linken Tabelle und die übereinstimmenden der rechten Tabelle zurück."
+      },
+      {
+        "term": "RIGHT JOIN",
+        "desc": "Gibt alle Datensätze der rechten Tabelle und die übereinstimmenden der linken Tabelle zurück."
+      },
+      {
+        "term": "FULL OUTER JOIN",
+        "desc": "Gibt alle Datensätze zurück, wenn es eine Übereinstimmung in der linken oder rechten Tabelle gibt."
+      },
+      {
+        "term": "WHERE",
+        "desc": "Filtert Datensätze, um nur diejenigen abzurufen, die eine bestimmte Bedingung erfüllen."
+      },
+      {
+        "term": "GROUP BY",
+        "desc": "Gruppiert Datensätze mit denselben Werten in Auswertungszeilen (z. B. mit COUNT, SUM)."
+      },
+      {
+        "term": "HAVING",
+        "desc": "Filtert Gruppen basierend auf einer Bedingung (ähnlich wie WHERE, aber für GROUP BY)."
+      },
+      {
+        "term": "ORDER BY",
+        "desc": "Sortiert die Ergebnismenge in aufsteigender oder absteigender Reihenfolge."
+      },
+      {
+        "term": "LIMIT / TOP",
+        "desc": "Begrenzt die Anzahl der zurückgegebenen Datensätze."
+      },
+      {
+        "term": "DISTINCT",
+        "desc": "Gibt nur unterschiedliche (einzigartige) Werte zurück."
+      },
+      {
+        "term": "UNION",
+        "desc": "Kombiniert die Ergebnismengen von zwei oder mehr SELECT-Anweisungen."
+      },
+      {
+        "term": "IN",
+        "desc": "Erlaubt die Angabe mehrerer Werte in einer WHERE-Klausel."
+      },
+      {
+        "term": "BETWEEN",
+        "desc": "Wählt Werte innerhalb eines bestimmten Bereichs aus."
+      },
+      {
+        "term": "LIKE",
+        "desc": "Sucht nach einem bestimmten Muster in einer Spalte (oft mit %-Wildcards)."
+      },
+      {
+        "term": "IS NULL",
+        "desc": "Prüft, ob ein Wert NULL (leer) ist."
+      },
+      {
+        "term": "COUNT / SUM / AVG",
+        "desc": "Aggregatfunktionen zum Zählen, Summieren oder Berechnen des Durchschnitts von Werten."
+      },
+      {
+        "term": "COMMIT",
+        "desc": "Speichert die aktuellen Transaktionen dauerhaft in der Datenbank."
+      },
+      {
+        "term": "ROLLBACK",
+        "desc": "Macht die aktuellen Transaktionen seit dem letzten COMMIT rückgängig."
+      },
+      {
+        "term": "CREATE TABLE",
+        "desc": "Erstellt eine neue Tabelle in der Datenbank."
+      },
+      {
+        "term": "ALTER TABLE",
+        "desc": "Ändert die Struktur einer bestehenden Tabelle."
+      },
+      {
+        "term": "DROP TABLE",
+        "desc": "Löscht eine komplette Tabelle und alle darin enthaltenen Daten."
+      },
+      {
+        "term": "TRUNCATE",
+        "desc": "Löscht alle Datensätze in einer Tabelle schnell, ohne die Tabellenstruktur zu entfernen."
+      }
+    ]
+  },
+  {
     "id": "sec11",
     "nav_title": "☁️ Cloud & Container",
     "sec_title": "Cloud & Container",
@@ -1760,6 +1923,10 @@ const wikiData = [
         "desc": "Standardliste für Schwachstellen / Bewertungsskala (0-10)."
       },
       {
+        "term": "DDoS",
+        "desc": "Distributed Denial of Service – Überlastung eines Servers durch eine Vielzahl von Anfragen aus unterschiedlichen Quellen."
+      },
+      {
         "term": "Dictionary Attack",
         "desc": "Angriff mittels Listen bekannter Passwörter."
       },
@@ -1910,6 +2077,10 @@ const wikiData = [
       {
         "term": "WAF",
         "desc": "Schutzwall speziell für Web-Traffic (Filtert XSS/SQLi)."
+      },
+      {
+        "term": "XSS (Cross-Site Scripting)",
+        "desc": "Einschleusen von bösartigem JavaScript in eine vertrauenswürdige Website."
       },
       {
         "term": "Zero-Day",
@@ -2840,28 +3011,48 @@ const wikiData = [
     "sec_title": "Docker Befehle",
     "cards": [
       {
-        "term": "docker ps",
-        "desc": "Listet alle aktuell laufenden Container auf."
-      },
-      {
-        "term": "docker images",
-        "desc": "Anzeigen aller lokal gespeicherten Images."
-      },
-      {
-        "term": "docker-compose up -d",
-        "desc": "Startet die gesamte Umgebung im Hintergrund (Detached)."
-      },
-      {
-        "term": "docker logs -f [ID]",
-        "desc": "Live-Verfolgung der Log-Ausgaben eines Containers."
+        "term": "docker build -t [name] .",
+        "desc": "Erstellt ein neues Docker-Image aus einem Dockerfile im aktuellen Verzeichnis."
       },
       {
         "term": "docker exec -it [ID] /bin/bash",
         "desc": "Öffnet ein Terminal direkt im laufenden Container."
       },
       {
+        "term": "docker images",
+        "desc": "Anzeigen aller lokal gespeicherten Images."
+      },
+      {
+        "term": "docker logs -f [ID]",
+        "desc": "Live-Verfolgung der Log-Ausgaben eines Containers."
+      },
+      {
+        "term": "docker ps",
+        "desc": "Listet alle aktuell laufenden Container auf."
+      },
+      {
+        "term": "docker pull [image]",
+        "desc": "Lädt ein Image aus einer Registry (z. B. Docker Hub) herunter."
+      },
+      {
+        "term": "docker push [image]",
+        "desc": "Lädt ein lokales Image in eine Registry hoch."
+      },
+      {
+        "term": "docker rm [container]",
+        "desc": "Löscht einen gestoppten Container."
+      },
+      {
+        "term": "docker rmi [image]",
+        "desc": "Löscht ein lokales Docker-Image."
+      },
+      {
         "term": "docker system prune",
         "desc": "Löscht alle ungenutzten Daten (Images, Container, Netzwerke)."
+      },
+      {
+        "term": "docker-compose up -d",
+        "desc": "Startet die gesamte Umgebung im Hintergrund (Detached)."
       }
     ]
   },
