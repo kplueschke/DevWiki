@@ -3952,6 +3952,14 @@ const wikiData = [
         "term": "Automatisierte Werkzeuge",
         "desc": "Übersicht über Werkzeuge für die automatisierte Netzwerk-Analyse.",
         "onclick": "openPDF('Werkzeuge_für_automatisierte_Netzwerk-Analyse.pdf')"
+      },
+      {
+        "term": "Top Erfassungsfilter (Capture)",
+        "desc": "host x.x.x.x (Traffic für IP), net 192.168.1.0/24 (Subnetz), port 80 (nur Port 80), not arp (ARP ausblenden), tcp portrange 1500-1599."
+      },
+      {
+        "term": "Top Anzeigefilter (Display)",
+        "desc": "ip.addr==x.x.x.x (IP Traffic), tcp.port==443 (HTTPS), http.request.method==GET, dns.qry.name contains \"google\", tcp.analysis.flags (Probleme)."
       }
     ]
   }
