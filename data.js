@@ -3592,5 +3592,67 @@ const wikiData = [
         "desc": "Der Fehler tritt bei allen auf – außer bei exakt einem Entwickler im Team."
       }
     ]
+  },
+  {
+    "id": "sec25",
+    "nav_title": "🦈 Wireshark & Network",
+    "sec_title": "Wireshark & Netzwerkanalyse",
+    "cards": [
+      {
+        "term": "Analyseprofile",
+        "desc": "Profile für Netzwerk-Paketanalysatoren optimieren und anpassen.",
+        "onclick": "openPDF('Analyseprofile_für_Netzwerk-Paketanalysatoren.pdf')"
+      },
+      {
+        "term": "Netzwerk-Analyse-Filter",
+        "desc": "Der Guide für effiziente Filter in der Netzwerkanalyse.",
+        "onclick": "openPDF('Guide_für_Netzwerk-Analyse-Filter.pdf')"
+      },
+      {
+        "term": "IPv4-Header Troubleshooting",
+        "desc": "Detaillierter Guide zur Fehlersuche anhand des IPv4-Headers.",
+        "onclick": "openPDF('IPv4-Header_Troubleshooting-Guide.pdf')"
+      },
+      {
+        "term": "Logik-Check Negations-Filter",
+        "desc": "Vermeidung von Fehlern bei Negations-Filtern.",
+        "onclick": "openPDF('Logik-Check_bei_Negations-Filtern.pdf')"
+      },
+      {
+        "term": "Namensauflösung",
+        "desc": "Erklärung der Namensauflösung in der Netzwerkanalyse.",
+        "onclick": "openPDF('Namensauflösung_in_der_Netzwerkanalyse.pdf')"
+      },
+      {
+        "term": "Filter: Erfassung vs. Anzeige",
+        "desc": "Unterschiede und Guide: Capture- vs. Display-Filter.",
+        "onclick": "openPDF('Netzwerk-Filter-Guide__Erfassung_vs._Anzeige.pdf')"
+      },
+      {
+        "term": "Netzwerk-Forensik",
+        "desc": "Angriffe mit Display-Filtern entlarven.",
+        "onclick": "openPDF('Netzwerk-Forensik__Angriffe_mit_Display-Filtern_entlarven.pdf')"
+      },
+      {
+        "term": "Basiswissen Netzwerkanalyse",
+        "desc": "Der ultimative Guide für den Einstieg in die Netzwerkanalyse.",
+        "onclick": "openPDF('Netzwerkanalyse-Basiswissen__Der_ultimative_Guide.pdf')"
+      },
+      {
+        "term": "TCP-Fehlersuche",
+        "desc": "Systematische Fehlersuche auf Basis des TCP-Protokolls.",
+        "onclick": "openPDF('TCP-Fehlersuche_in_der_Netzwerkanalyse.pdf')"
+      },
+      {
+        "term": "Latenz-Diagnose",
+        "desc": "Visuelle Netzwerkanalyse und Diagnose von Latenzen.",
+        "onclick": "openPDF('Visuelle_Netzwerkanalyse_und_Latenz-Diagnose.pdf')"
+      },
+      {
+        "term": "Automatisierte Werkzeuge",
+        "desc": "Übersicht über Werkzeuge für die automatisierte Netzwerk-Analyse.",
+        "onclick": "openPDF('Werkzeuge_für_automatisierte_Netzwerk-Analyse.pdf')"
+      }
+    ]
   }
 ];
