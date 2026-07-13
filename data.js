@@ -123,201 +123,6 @@ const wikiData = [
     ]
   },
   {
-    "id": "sec2",
-    "nav_title": "🏛️ OOP‑Prinzipien & Klassen",
-    "sec_title": "OOP – Objektorientierte Programmierung",
-    "cards": [
-      {
-        "term": "Abgeleitete Klasse",
-        "desc": "Subklasse, die Funktionen erweitert oder überschreibt."
-      },
-      {
-        "term": "Abstraktion",
-        "desc": "Reduzierung komplexer Systeme auf ihre Kernelemente."
-      },
-      {
-        "term": "Abstrakte Klasse",
-        "desc": "Klasse, die nicht instanziert werden kann."
-      },
-      {
-        "term": "Aggregate",
-        "desc": "Ein Verbund mehrerer Entities als Einheit."
-      },
-      {
-        "term": "Aggregation",
-        "desc": "Objekt hält Referenz auf andere Objekte – schwächer als Komposition."
-      },
-      {
-        "term": "Base",
-        "desc": "Zugriff auf implementierte Logik der Basisklasse."
-      },
-      {
-        "term": "Basisklasse",
-        "desc": "Die übergeordnete Klasse, von der geerbt wird."
-      },
-      {
-        "term": "Composition",
-        "desc": "Objekt enthält andere Objekte als Teil der Struktur."
-      },
-      {
-        "term": "Constructor Chaining",
-        "desc": "Ein Konstruktor ruft einen anderen auf."
-      },
-      {
-        "term": "Data Class / Record",
-        "desc": "OOP‑Typ speziell für immutable Daten."
-      },
-      {
-        "term": "Dependency",
-        "desc": "Eine Klasse benötigt eine andere Klasse als Abhängigkeit."
-      },
-      {
-        "term": "Dependency Injection",
-        "desc": "Abhängigkeiten werden von außen bereitgestellt."
-      },
-      {
-        "term": "Destruktor",
-        "desc": "Räumt Ressourcen beim Löschen des Objekts auf."
-      },
-      {
-        "term": "DTO",
-        "desc": "Data Transfer Object zum Datentransport."
-      },
-      {
-        "term": "Early Binding",
-        "desc": "Entscheidung über Methode zur Kompilierzeit."
-      },
-      {
-        "term": "Eigenschaft (Property)",
-        "desc": "Datenfeld mit Getter/Setter zum Lesen & Schreiben."
-      },
-      {
-        "term": "Entity",
-        "desc": "Objekt mit Identität (z.B. in DDD)."
-      },
-      {
-        "term": "Feld (Field)",
-        "desc": "Variable im Inneren eines Objekts oder einer Klasse."
-      },
-      {
-        "term": "Generics",
-        "desc": "OOP‑Templates für beliebige Datentypen."
-      },
-      {
-        "term": "Getter/Setter",
-        "desc": "Steuern den Zugriff auf Eigenschaften."
-      },
-      {
-        "term": "Instanzierung",
-        "desc": "Erzeugung eines Objekts aus einer Klasse."
-      },
-      {
-        "term": "Interface",
-        "desc": "Reiner Vertrag aus Methoden ohne Implementierung."
-      },
-      {
-        "term": "Kapselung (Encapsulation)",
-        "desc": "Daten verstecken, nur kontrollierten Zugriff erlauben."
-      },
-      {
-        "term": "Klasse",
-        "desc": "Bauplan für Objekte mit Eigenschaften und Methoden."
-      },
-      {
-        "term": "Konstruktor",
-        "desc": "Spezielle Methode zur Initialisierung eines Objekts."
-      },
-      {
-        "term": "Late Binding",
-        "desc": "Entscheidung über Methode zur Laufzeit."
-      },
-      {
-        "term": "Liskov Substitution Principle",
-        "desc": "Subtypen müssen sich wie Basistypen verhalten."
-      },
-      {
-        "term": "Methode",
-        "desc": "Funktion innerhalb einer Klasse."
-      },
-      {
-        "term": "Methodenüberladung",
-        "desc": "Gleiche Methode, aber unterschiedliche Parameter."
-      },
-      {
-        "term": "Methodenüberschreibung",
-        "desc": "Implementierung einer geerbten Methode überschreiben."
-      },
-      {
-        "term": "Object Lifetime",
-        "desc": "Lebenszyklus einer Instanz von Erzeugung bis Zerstörung."
-      },
-      {
-        "term": "Objekt",
-        "desc": "Instanz einer Klasse, konkretes Exemplar im Speicher."
-      },
-      {
-        "term": "Open/Closed Principle",
-        "desc": "Erweiterbar, aber nicht veränderbar."
-      },
-      {
-        "term": "Override",
-        "desc": "Überschreibt eine virtuelle/abstrakte Methode."
-      },
-      {
-        "term": "Overriding vs. Hiding",
-        "desc": "Override ersetzt Verhalten – Hiding blendet es aus."
-      },
-      {
-        "term": "Polymorphie",
-        "desc": "Gleiches Interface, unterschiedliche Implementierung."
-      },
-      {
-        "term": "POCO",
-        "desc": "Plain Old CLR Object – einfache Datenklasse ohne Logik."
-      },
-      {
-        "term": "Readonly",
-        "desc": "Wert nach initialer Zuweisung nicht mehr veränderbar."
-      },
-      {
-        "term": "Reflection",
-        "desc": "Laufzeitinspektion von Typen & Metadaten."
-      },
-      {
-        "term": "Sealed",
-        "desc": "Verhindert weitere Vererbung einer Klasse."
-      },
-      {
-        "term": "SOLID Prinzipien",
-        "desc": "5 Grundprinzipien für sauberes OOP‑Design."
-      },
-      {
-        "term": "Static",
-        "desc": "Mitglied, das zur Klasse selbst statt zur Instanz gehört."
-      },
-      {
-        "term": "This",
-        "desc": "Referenz auf die aktuelle Instanz."
-      },
-      {
-        "term": "Vererbung",
-        "desc": "Eine Klasse übernimmt Eigenschaften/Methoden einer anderen."
-      },
-      {
-        "term": "Virtuelle Methode",
-        "desc": "Kann in Unterklassen überschrieben werden."
-      },
-      {
-        "term": "SOLID",
-        "desc": "Fünf Prinzipien objektorientierten Designs: Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, Dependency Inversion."
-      },
-      {
-        "term": "Design Patterns",
-        "desc": "Bewährte Lösungsschablonen für wiederkehrende Design-Probleme (z.B. Singleton, Observer)."
-      }
-    ]
-  },
-  {
     "id": "sec3",
     "nav_title": "🧩 Datentypen & Strukturen",
     "sec_title": "Datentypen",
@@ -561,6 +366,60 @@ const wikiData = [
     ]
   },
   {
+    "id": "se_prozesse",
+    "nav_title": "🔄 Software-Engineering & Prozesse",
+    "sec_title": "Softwareentwicklungsprozesse",
+    "cards": [
+      {
+        "term": "Scrum",
+        "desc": "Agiles Framework mit Sprints, Daily Scrums, Sprint Reviews und Retrospektiven. Rollen: Scrum Master, Product Owner, Developer."
+      },
+      {
+        "term": "Kanban",
+        "desc": "Agile Methode zur Visualisierung von Aufgaben (z.B. auf einem Kanban-Board) mit Spalten wie To Do, In Progress, Done, um Engpässe zu vermeiden."
+      },
+      {
+        "term": "Wasserfallmodell",
+        "desc": "Klassisches, lineares Vorgehensmodell in der Softwareentwicklung (Anforderung, Entwurf, Implementierung, Test, Wartung)."
+      },
+      {
+        "term": "V-Modell",
+        "desc": "Erweiterung des Wasserfallmodells, bei dem jeder Entwicklungsphase eine entsprechende Testphase gegenübergestellt wird."
+      },
+      {
+        "term": "Agile Softwareentwicklung",
+        "desc": "Sammelbegriff für flexible, iterative Entwicklungsmethoden, die den Menschen und die funktionierende Software in den Fokus stellen (Agiles Manifest)."
+      }
+    ]
+  },
+  {
+    "id": "pm_doku",
+    "nav_title": "📋 Projektmanagement & Doku",
+    "sec_title": "Projektplanung & Dokumentation",
+    "cards": [
+      {
+        "term": "Lastenheft",
+        "desc": "Beschreibt die Anforderungen des **Auftraggebers** ('Was' und 'Wofür' soll gemacht werden?)."
+      },
+      {
+        "term": "Pflichtenheft",
+        "desc": "Beschreibt, **wie** der Auftragnehmer die Anforderungen aus dem Lastenheft umsetzen wird (Lösungskonzept)."
+      },
+      {
+        "term": "Nutzwertanalyse",
+        "desc": "Systematische Entscheidungsmethode, um verschiedene Alternativen anhand gewichteter Kriterien zu vergleichen."
+      },
+      {
+        "term": "Gantt-Diagramm",
+        "desc": "Ein Balkendiagramm zur Darstellung von Projektabläufen und -zeitplänen."
+      },
+      {
+        "term": "Meilenstein",
+        "desc": "Wichtiges Zwischenziel in einem Projekt, dessen Erreichen überprüfbar ist."
+      }
+    ]
+  },
+  {
     "id": "sec4",
     "nav_title": "🎨 Clean Code & Naming",
     "sec_title": "🎨 Clean Code & Naming",
@@ -614,204 +473,251 @@ const wikiData = [
     ]
   },
   {
-    "id": "sec5",
-    "nav_title": "🔧 Git & Versionierung",
-    "sec_title": "Git & Versionskontrolle",
+    "id": "sec2",
+    "nav_title": "🏛️ OOP‑Prinzipien & Klassen",
+    "sec_title": "OOP – Objektorientierte Programmierung",
     "cards": [
       {
-        "term": "Blame",
-        "desc": "Zeigt für jede Codezeile an, welcher Autor sie wann zuletzt geändert hat."
+        "term": "Abgeleitete Klasse",
+        "desc": "Subklasse, die Funktionen erweitert oder überschreibt."
       },
       {
-        "term": "Branch",
-        "desc": "Ein isolierter, paralleler Entwicklungszweig für Features oder Bugfixes."
+        "term": "Abstraktion",
+        "desc": "Reduzierung komplexer Systeme auf ihre Kernelemente."
       },
       {
-        "term": "Cherry-Pick",
-        "desc": "Einen ganz gezielten, einzelnen Commit aus einem anderen Branch übernehmen."
+        "term": "Abstrakte Klasse",
+        "desc": "Klasse, die nicht instanziert werden kann."
       },
       {
-        "term": "Commit",
-        "desc": "Ein gespeicherter Schnappschuss (Snapshot) von Code-Änderungen inkl. Nachricht."
+        "term": "Aggregate",
+        "desc": "Ein Verbund mehrerer Entities als Einheit."
       },
       {
-        "term": "Conflict",
-        "desc": "Tritt auf, wenn zwei Personen dieselbe Zeile unterschiedlich geändert haben (Merge-Konflikt)."
+        "term": "Aggregation",
+        "desc": "Objekt hält Referenz auf andere Objekte – schwächer als Komposition."
       },
       {
-        "term": "Detached HEAD",
-        "desc": "Zustand, in dem kein Branch ausgewählt ist, sondern direkt auf einem Commit gearbeitet wird."
+        "term": "Base",
+        "desc": "Zugriff auf implementierte Logik der Basisklasse."
       },
       {
-        "term": "Fast-Forward",
-        "desc": "Ein Merge, bei dem der Branch-Zeiger einfach auf den neuesten Commit verschoben wird."
+        "term": "Basisklasse",
+        "desc": "Die übergeordnete Klasse, von der geerbt wird."
       },
       {
-        "term": "Fetch",
-        "desc": "Ruft Informationen über Änderungen vom Server ab, ohne sie lokal zusammenzuführen."
+        "term": "Composition",
+        "desc": "Objekt enthält andere Objekte als Teil der Struktur."
       },
       {
-        "term": "Fork",
-        "desc": "Eine vollständige Kopie eines Repositories auf dem Server (oft für Open Source Beiträge)."
+        "term": "Constructor Chaining",
+        "desc": "Ein Konstruktor ruft einen anderen auf."
       },
       {
-        "term": "Git Flow",
-        "desc": "Ein Branching-Modell, das Branches für Features, Releases und Hotfixes strikt trennt."
+        "term": "Data Class / Record",
+        "desc": "OOP‑Typ speziell für immutable Daten."
       },
       {
-        "term": "Git Hooks",
-        "desc": "Skripte, die automatisch bei Ereignissen (z. B. vor einem Commit) ausgeführt werden."
+        "term": "Dependency",
+        "desc": "Eine Klasse benötigt eine andere Klasse als Abhängigkeit."
       },
       {
-        "term": "Merge",
-        "desc": "Das Zusammenführen von Änderungen aus verschiedenen Zweigen zu einem gemeinsamen Stand."
+        "term": "Dependency Injection",
+        "desc": "Abhängigkeiten werden von außen bereitgestellt."
       },
       {
-        "term": "Origin / Upstream",
-        "desc": "Standardname für den Hauptserver (Remote) vs. das Original-Repo bei einem Fork."
+        "term": "Destruktor",
+        "desc": "Räumt Ressourcen beim Löschen des Objekts auf."
       },
       {
-        "term": "Pull",
-        "desc": "Kombination aus Fetch und Merge: Änderungen laden und sofort lokal einspielen."
+        "term": "DTO",
+        "desc": "Data Transfer Object zum Datentransport."
       },
       {
-        "term": "Pull Request (PR)",
-        "desc": "Förmlicher Vorschlag, Code-Änderungen zu prüfen und in einen Hauptzweig zu mergen."
+        "term": "Early Binding",
+        "desc": "Entscheidung über Methode zur Kompilierzeit."
       },
       {
-        "term": "Push",
-        "desc": "Lokale Commits auf den entfernten Server (Remote) hochladen."
+        "term": "Eigenschaft (Property)",
+        "desc": "Datenfeld mit Getter/Setter zum Lesen & Schreiben."
       },
       {
-        "term": "Rebase",
-        "desc": "Die Basis eines Branches auf einen neuen Startpunkt setzen, um eine lineare Historie zu erhalten."
+        "term": "Entity",
+        "desc": "Objekt mit Identität (z.B. in DDD)."
       },
       {
-        "term": "Repository",
-        "desc": "Das gesamte Projektverzeichnis inklusive der kompletten Versionshistorie."
+        "term": "Feld (Field)",
+        "desc": "Variable im Inneren eines Objekts oder einer Klasse."
       },
       {
-        "term": "Reset",
-        "desc": "Macht Commits rückgängig, wahlweise durch Löschen oder Beibehalten der Änderungen im Arbeitsverzeichnis."
+        "term": "Generics",
+        "desc": "OOP‑Templates für beliebige Datentypen."
       },
       {
-        "term": "Revert",
-        "desc": "Erstellt einen neuen Commit, der die Änderungen eines vorherigen Commits umkehrt."
+        "term": "Getter/Setter",
+        "desc": "Steuern den Zugriff auf Eigenschaften."
       },
       {
-        "term": "Squash",
-        "desc": "Mehrere kleine Commits zu einem einzigen, sauberen Commit zusammenfassen."
+        "term": "Instanzierung",
+        "desc": "Erzeugung eines Objekts aus einer Klasse."
       },
       {
-        "term": "Stash",
-        "desc": "Aktuelle, unfertige Änderungen kurzzeitig in einen Zwischenspeicher (\"Parkplatz\") legen."
+        "term": "Interface",
+        "desc": "Reiner Vertrag aus Methoden ohne Implementierung."
       },
       {
-        "term": "Tag",
-        "desc": "Ein fester, benannter Marker in der Historie, meist zur Kennzeichnung von Release-Versionen."
+        "term": "Kapselung (Encapsulation)",
+        "desc": "Daten verstecken, nur kontrollierten Zugriff erlauben."
       },
       {
-        "term": "git stash",
-        "desc": "Speichert unvollendete Änderungen temporär ab, um ein sauberes Arbeitsverzeichnis zu erhalten."
+        "term": "Klasse",
+        "desc": "Bauplan für Objekte mit Eigenschaften und Methoden."
       },
       {
-        "term": "git rebase",
-        "desc": "Integriert Änderungen aus einem Branch in einen anderen, schreibt aber die Commit-Historie neu (linear)."
+        "term": "Konstruktor",
+        "desc": "Spezielle Methode zur Initialisierung eines Objekts."
+      },
+      {
+        "term": "Late Binding",
+        "desc": "Entscheidung über Methode zur Laufzeit."
+      },
+      {
+        "term": "Liskov Substitution Principle",
+        "desc": "Subtypen müssen sich wie Basistypen verhalten."
+      },
+      {
+        "term": "Methode",
+        "desc": "Funktion innerhalb einer Klasse."
+      },
+      {
+        "term": "Methodenüberladung",
+        "desc": "Gleiche Methode, aber unterschiedliche Parameter."
+      },
+      {
+        "term": "Methodenüberschreibung",
+        "desc": "Implementierung einer geerbten Methode überschreiben."
+      },
+      {
+        "term": "Object Lifetime",
+        "desc": "Lebenszyklus einer Instanz von Erzeugung bis Zerstörung."
+      },
+      {
+        "term": "Objekt",
+        "desc": "Instanz einer Klasse, konkretes Exemplar im Speicher."
+      },
+      {
+        "term": "Open/Closed Principle",
+        "desc": "Erweiterbar, aber nicht veränderbar."
+      },
+      {
+        "term": "Override",
+        "desc": "Überschreibt eine virtuelle/abstrakte Methode."
+      },
+      {
+        "term": "Overriding vs. Hiding",
+        "desc": "Override ersetzt Verhalten – Hiding blendet es aus."
+      },
+      {
+        "term": "Polymorphie",
+        "desc": "Gleiches Interface, unterschiedliche Implementierung."
+      },
+      {
+        "term": "POCO",
+        "desc": "Plain Old CLR Object – einfache Datenklasse ohne Logik."
+      },
+      {
+        "term": "Readonly",
+        "desc": "Wert nach initialer Zuweisung nicht mehr veränderbar."
+      },
+      {
+        "term": "Reflection",
+        "desc": "Laufzeitinspektion von Typen & Metadaten."
+      },
+      {
+        "term": "Sealed",
+        "desc": "Verhindert weitere Vererbung einer Klasse."
+      },
+      {
+        "term": "SOLID Prinzipien",
+        "desc": "5 Grundprinzipien für sauberes OOP‑Design."
+      },
+      {
+        "term": "Static",
+        "desc": "Mitglied, das zur Klasse selbst statt zur Instanz gehört."
+      },
+      {
+        "term": "This",
+        "desc": "Referenz auf die aktuelle Instanz."
+      },
+      {
+        "term": "Vererbung",
+        "desc": "Eine Klasse übernimmt Eigenschaften/Methoden einer anderen."
+      },
+      {
+        "term": "Virtuelle Methode",
+        "desc": "Kann in Unterklassen überschrieben werden."
+      },
+      {
+        "term": "SOLID",
+        "desc": "Fünf Prinzipien objektorientierten Designs: Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, Dependency Inversion."
+      },
+      {
+        "term": "Design Patterns",
+        "desc": "Bewährte Lösungsschablonen für wiederkehrende Design-Probleme (z.B. Singleton, Observer)."
       }
     ]
   },
   {
-    "id": "sec6",
-    "nav_title": "🐞 Debugging & Tests",
-    "sec_title": "Debugging & Tests",
+    "id": "uml_modellierung",
+    "nav_title": "📊 UML & Modellierung",
+    "sec_title": "Unified Modeling Language",
     "cards": [
       {
-        "term": "AAA-Pattern",
-        "desc": "Strukturierung von Tests in Arrange (Vorbereitung), Act (Ausführung) und Assert (Prüfung)."
+        "term": "Klassendiagramm",
+        "desc": "Strukturdiagramm: Zeigt die Klassen eines Systems, ihre Attribute, Methoden und die Beziehungen (Vererbung, Assoziation) zueinander."
       },
       {
-        "term": "Assertion",
-        "desc": "Die erwartete Bedingung in einem Test; schlägt der Vergleich fehl, scheitert der Test."
+        "term": "Sequenzdiagramm",
+        "desc": "Verhaltensdiagramm: Zeigt, wie Objekte im Laufe der Zeit miteinander interagieren (Nachrichtenaustausch)."
       },
       {
-        "term": "BDD",
-        "desc": "Behavior Driven Development: Test-Schreibweise aus Nutzersicht (Given/When/Then)."
+        "term": "Use Case Diagramm",
+        "desc": "Anwendungsfalldiagramm: Zeigt die Interaktionen zwischen Akteuren (Nutzern) und dem System, um das Verhalten aus Anwendersicht zu modellieren."
       },
       {
-        "term": "Breakpoint",
-        "desc": "Manueller Haltepunkt im Code, um Variablen und Programmfluss live zu untersuchen."
+        "term": "Aktivitätsdiagramm",
+        "desc": "Modelliert den Kontrollfluss von Prozessen und Abläufen, ähnlich einem Flussdiagramm."
       },
       {
-        "term": "Coverage",
-        "desc": "Testabdeckung: Prozentsatz des Quellcodes, der durch automatisierte Tests ausgeführt wurde."
+        "term": "ER-Modell (ERM)",
+        "desc": "Entity-Relationship-Modell: Dient der konzeptionellen Modellierung von Datenbanken (Entitäten, Relationen, Attribute)."
+      }
+    ]
+  },
+  {
+    "id": "design_patterns",
+    "nav_title": "🏗️ Design Patterns",
+    "sec_title": "Entwurfsmuster",
+    "cards": [
+      {
+        "term": "Singleton",
+        "desc": "Erzeugungsmuster: Stellt sicher, dass eine Klasse nur genau eine Instanz hat und bietet einen globalen Zugriffspunkt darauf."
       },
       {
-        "term": "E2E Test",
-        "desc": "End-to-End Test: Prüft einen kompletten Geschäftsprozess vom Start bis zum Ziel."
+        "term": "Factory Method",
+        "desc": "Erzeugungsmuster: Definiert eine Schnittstelle zur Erstellung eines Objekts, überlässt aber den Unterklassen die Entscheidung, welche Klasse instanziiert wird."
       },
       {
-        "term": "Fake",
-        "desc": "Eine einfache, funktionale Implementierung (z.B. In-Memory-DB statt echter Datenbank)."
+        "term": "Observer",
+        "desc": "Verhaltensmuster: Ein Objekt (Subjekt) benachrichtigt eine Liste von abhängigen Objekten (Beobachter) automatisch über Zustandsänderungen."
       },
       {
-        "term": "Flaky Test",
-        "desc": "Ein unzuverlässiger Test, der bei gleichem Code mal besteht und mal fehlschlägt."
+        "term": "Strategy",
+        "desc": "Verhaltensmuster: Definiert eine Familie von Algorithmen und macht diese austauschbar, ohne den Client-Code anzupassen."
       },
       {
-        "term": "Fuzzer",
-        "desc": "Automatisierter Test, der ein Programm mit massenhaft Zufallsdaten flutet, um Abstürze zu finden."
-      },
-      {
-        "term": "Hot Reload",
-        "desc": "Sofortige Übernahme von Code-Änderungen in die laufende App ohne kompletten Neustart."
-      },
-      {
-        "term": "Integration Test",
-        "desc": "Überprüft das korrekte Zusammenspiel zwischen zwei oder mehr Modulen oder Systemen."
-      },
-      {
-        "term": "Mock",
-        "desc": "Ein simulierter Ersatz für Abhängigkeiten, der Erwartungen über Aufrufe prüfen kann."
-      },
-      {
-        "term": "Mutation Testing",
-        "desc": "Verändert den Code minimal, um zu prüfen, ob die vorhandenen Tests diesen Fehler finden."
-      },
-      {
-        "term": "Profiling",
-        "desc": "Analyse der Laufzeit und des Speicherverbrauchs, um Performance-Engpässe zu finden."
-      },
-      {
-        "term": "Regression Test",
-        "desc": "Wiederholter Test nach Änderungen, um sicherzustellen, dass alte Funktionen noch arbeiten."
-      },
-      {
-        "term": "Smoke Test",
-        "desc": "Ein schneller Oberflächentest, um zu prüfen, ob die Basis-Funktionen überhaupt starten."
-      },
-      {
-        "term": "Snapshot Test",
-        "desc": "Vergleicht die aktuelle UI oder Datenstruktur mit einem gespeicherten \"Soll-Zustand\"."
-      },
-      {
-        "term": "Stub",
-        "desc": "Ein minimaler Platzhalter, der auf Aufrufe lediglich mit festen Werten antwortet."
-      },
-      {
-        "term": "TDD",
-        "desc": "Test Driven Development: Der Test wird vor dem eigentlichen Funktionscode geschrieben."
-      },
-      {
-        "term": "Unit Test",
-        "desc": "Automatisierter Test der kleinstmöglichen Einheit (z. B. einer einzelnen Methode)."
-      },
-      {
-        "term": "Watch",
-        "desc": "Überwachungstool im Debugger, das den Wert bestimmter Variablen permanent anzeigt."
-      },
-      {
-        "term": "Mocking",
-        "desc": "Das Simulieren des Verhaltens echter Objekte in Unit-Tests (z.B. Datenbank-Verbindungen)."
+        "term": "MVC (Model-View-Controller)",
+        "desc": "Architekturmuster, das Software in Datenmodell (Model), Präsentation (View) und Steuerung (Controller) unterteilt."
       }
     ]
   },
@@ -1047,6 +953,233 @@ const wikiData = [
       {
         "term": "Serverless",
         "desc": "Ausführung von Code ohne Server-Management (z.B. AWS Lambda)."
+      }
+    ]
+  },
+  {
+    "id": "sec14",
+    "nav_title": "🔁 Async & Workflows",
+    "sec_title": "Nebenläufigkeit & Asynchronität",
+    "cards": [
+      {
+        "term": "Async / Await",
+        "desc": "Schlüsselwörter für die einfache Steuerung asynchroner Programmflüsse."
+      },
+      {
+        "term": "Async I/O",
+        "desc": "Asynchroner Zugriff auf Eingabe/Ausgabe, ohne den Thread während des Wartens zu blockieren."
+      },
+      {
+        "term": "Async Lock",
+        "desc": "Asynchrone Sperre, die den Task pausiert, aber den Thread für andere Aufgaben freigibt."
+      },
+      {
+        "term": "Async Stream",
+        "desc": "Asynchroner Datenstrom (IAsyncEnumerable), der Werte nacheinander liefert, sobald sie bereit sind."
+      },
+      {
+        "term": "Asynchronous Pipeline",
+        "desc": "Datenfluss-Modell, bei dem verschiedene Stufen einer Aufgabe parallel verarbeitet werden."
+      },
+      {
+        "term": "Atomic Operation",
+        "desc": "Unteilbare Operation auf CPU-Ebene, die nicht durch andere Threads unterbrochen werden kann."
+      },
+      {
+        "term": "Auto Reset Event",
+        "desc": "Synchronisationsobjekt, das nach einer Freigabe automatisch wieder in den gesperrten Zustand springt."
+      },
+      {
+        "term": "Awaitable",
+        "desc": "Ein Objekt (wie Task oder ValueTask), auf das mit dem await-Operator gewartet werden kann."
+      },
+      {
+        "term": "Backpressure",
+        "desc": "Mechanismus zur Flusssteuerung, um ein System vor Überlastung durch zu viele eingehende Daten zu schützen."
+      },
+      {
+        "term": "Barrier",
+        "desc": "Ein Synchronisationspunkt, an dem mehrere Threads aufeinandertreffen müssen, bevor sie gemeinsam fortfahren."
+      },
+      {
+        "term": "Blocking Call",
+        "desc": "Ein Funktionsaufruf, der den aktuellen Thread komplett anhält, bis die Operation abgeschlossen ist."
+      },
+      {
+        "term": "Cancellation Token",
+        "desc": "Ein Signal-Objekt, mit dem laufende asynchrone Operationen sicher abgebrochen werden können."
+      },
+      {
+        "term": "Concurrent Queue",
+        "desc": "Eine thread-sichere Warteschlange, die parallele Lese- und Schreibzugriffe erlaubt."
+      },
+      {
+        "term": "Continuation",
+        "desc": "Ein Codeblock, der automatisch ausgeführt wird, sobald eine asynchrone Operation beendet ist."
+      },
+      {
+        "term": "Countdown Event",
+        "desc": "Ein Synchronisationsobjekt, das einen Thread blockiert, bis eine bestimmte Anzahl an Tasks abgeschlossen ist."
+      },
+      {
+        "term": "Critical Section",
+        "desc": "Ein Codebereich, der zur Vermeidung von Fehlern niemals von mehr als einem Thread gleichzeitig betreten werden darf."
+      },
+      {
+        "term": "Deadlock",
+        "desc": "Ein Zustand, in dem sich zwei oder mehr Prozesse gegenseitig blockieren, weil jeder auf eine Ressource wartet, die der andere hält."
+      },
+      {
+        "term": "Event Loop",
+        "desc": "Der Kernmechanismus (z. B. in NodeJS), der asynchrone Ereignisse nacheinander abarbeitet."
+      },
+      {
+        "term": "Fiber",
+        "desc": "Ein extrem leichtgewichtiger \"Thread\", der vom Programm selbst und nicht vom Betriebssystem verwaltet wird."
+      },
+      {
+        "term": "Green Thread",
+        "desc": "Ein von einer Laufzeitumgebung (VM) verwalteter Thread, der auf Betriebssystem-Threads abgebildet wird."
+      },
+      {
+        "term": "Immutable Object",
+        "desc": "Ein Objekt, dessen Zustand nach der Erstellung nicht mehr geändert werden kann – dadurch ist es von Natur aus thread-sicher."
+      },
+      {
+        "term": "Livelock",
+        "desc": "Ein Zustand, in dem Prozesse zwar aktiv auf Ereignisse reagieren, sich aber gegenseitig so beeinflussen, dass kein echter Fortschritt erzielt wird."
+      },
+      {
+        "term": "Lock-Free Algorithm",
+        "desc": "Ein Algorithmus, der ohne explizite Sperren (Locks) auskommt, um maximale Performance zu erzielen."
+      },
+      {
+        "term": "Main Thread",
+        "desc": "Der primäre Thread einer Anwendung, der den Startpunkt bildet und oft für die Programmlogik zuständig ist."
+      },
+      {
+        "term": "Manual Reset Event",
+        "desc": "Ein Signal-Objekt, das so lange offen bleibt, bis es manuell wieder in den gesperrten Zustand gesetzt wird."
+      },
+      {
+        "term": "Memory Fence",
+        "desc": "Eine Barriere, die sicherstellt, dass Speicheroperationen in der korrekten Reihenfolge für alle Threads sichtbar werden."
+      },
+      {
+        "term": "Message Queue",
+        "desc": "Ein System zum asynchronen Austausch von Nachrichten zwischen verschiedenen Programmteilen oder Diensten."
+      },
+      {
+        "term": "Monitor",
+        "desc": "Ein High-Level-Synchronisationsmechanismus, der exklusiven Zugriff auf ein Objekt garantiert."
+      },
+      {
+        "term": "Mutex",
+        "desc": "Ein \"Mutual Exclusion\"-Objekt (gegenseitiger Ausschluss), das als exklusive Sperre für Ressourcen dient."
+      },
+      {
+        "term": "Non-Blocking Call",
+        "desc": "Ein Aufruf, der sofort zurückkehrt, auch wenn die Operation im Hintergrund noch läuft; der Thread bleibt frei."
+      },
+      {
+        "term": "Out-of-Order Execution",
+        "desc": "Ein Performance-Feature moderner CPUs, bei dem Befehle zur Effizienzsteigerung nicht strikt in der programmierten Reihenfolge ausgeführt werden."
+      },
+      {
+        "term": "Parallel LINQ (PLINQ)",
+        "desc": "Eine Erweiterung von LINQ, die Abfragen automatisch auf mehrere CPU-Kerne verteilt."
+      },
+      {
+        "term": "Parallel.For",
+        "desc": "Ein Programmierkonstrukt, das die Iterationen einer Schleife automatisch parallel auf mehreren Threads ausführt."
+      },
+      {
+        "term": "Producer-Consumer",
+        "desc": "Ein Entwurfsmuster, bei dem ein Thread Daten erzeugt und ein anderer diese asynchron verarbeitet."
+      },
+      {
+        "term": "Queue",
+        "desc": "Eine Warteschlange zur geordneten, sequenziellen Abarbeitung von Aufgaben (First-In-First-Out)."
+      },
+      {
+        "term": "Race Condition",
+        "desc": "Ein Fehler, bei dem das Endergebnis vom unvorhersehbaren zeitlichen Ablauf paralleler Operationen abhängt."
+      },
+      {
+        "term": "Scheduler Priority",
+        "desc": "Die Rangfolge, nach der das Betriebssystem entscheidet, welcher Thread als Nächstes Rechenzeit erhält."
+      },
+      {
+        "term": "Semaphore",
+        "desc": "Ein Zählmechanismus, der den gleichzeitigen Zugriff auf eine begrenzte Anzahl von Ressourcen regelt."
+      },
+      {
+        "term": "SemaphoreSlim",
+        "desc": "Eine leichtgewichtigere .NET-Variante des Semaphors, optimiert für kurze Wartezeiten innerhalb einer Anwendung."
+      },
+      {
+        "term": "Speculative Execution",
+        "desc": "Die Vorwegnahme von Berechnungen durch die CPU, bevor sicher ist, ob das Ergebnis überhaupt benötigt wird."
+      },
+      {
+        "term": "Spinlock",
+        "desc": "Eine Sperre, bei der ein Thread in einer engen Schleife aktiv wartet, statt sich schlafen zu legen (effizient bei sehr kurzen Wartezeiten)."
+      },
+      {
+        "term": "Task",
+        "desc": "Eine logische Abstraktion für eine asynchrone Operation, die im Gegensatz zum Thread vom Framework verwaltet wird."
+      },
+      {
+        "term": "Task Scheduler",
+        "desc": "Die Komponente, die entscheidet, wann und auf welchem Thread ein Task tatsächlich ausgeführt wird."
+      },
+      {
+        "term": "Thread",
+        "desc": "Die kleinste vom Betriebssystem verwaltete Ausführungseinheit eines Programms."
+      },
+      {
+        "term": "Thread Affinity",
+        "desc": "Die Bindung einer Operation an einen ganz bestimmten Thread (z. B. müssen UI-Elemente oft im UI-Thread bleiben)."
+      },
+      {
+        "term": "Thread Context Switch",
+        "desc": "Der rechenintensive Vorgang, bei dem die CPU den aktuellen Thread-Zustand speichert und zu einem anderen Thread wechselt."
+      },
+      {
+        "term": "Thread Pool",
+        "desc": "Ein Reservoir an bereits erstellten Threads, die für neue Aufgaben wiederverwendet werden, um Erzeugungskosten zu sparen."
+      },
+      {
+        "term": "Thread Pool Queue",
+        "desc": "Die interne Warteschlange des Thread Pools, in der Aufgaben auf einen freien Thread warten."
+      },
+      {
+        "term": "Thread Starvation",
+        "desc": "Ein Problem, bei dem ein Thread niemals Rechenzeit erhält, weil andere Threads ständig bevorzugt werden."
+      },
+      {
+        "term": "Thread-Safe",
+        "desc": "Code, der garantiert korrekt funktioniert, auch wenn er von mehreren Threads gleichzeitig ausgeführt wird."
+      },
+      {
+        "term": "UI Thread",
+        "desc": "Ein spezieller Thread, der ausschließlich für die Verarbeitung von Benutzereingaben und die Aktualisierung der Oberfläche zuständig ist."
+      },
+      {
+        "term": "Wait-Free",
+        "desc": "Die stärkste Garantie für Algorithmen: Jeder Thread wird garantiert nach einer festen Anzahl von Schritten fertig, unabhängig von anderen Threads."
+      },
+      {
+        "term": "Work Stealing",
+        "desc": "Ein Algorithmus im Scheduler, bei dem untätige Threads Aufgaben von überlasteten Threads \"stehlen\", um die CPU-Last zu verteilen."
+      },
+      {
+        "term": "Worker Thread",
+        "desc": "Ein Hintergrund-Thread, der rechenintensive Aufgaben übernimmt, ohne die Benutzeroberfläche zu blockieren."
+      },
+      {
+        "term": "Promise",
+        "desc": "Ein Objekt, das den eventuellen Abschluss (oder Fehlschlag) einer asynchronen Operation repräsentiert."
       }
     ]
   },
@@ -1314,6 +1447,60 @@ const wikiData = [
     ]
   },
   {
+    "id": "api_schnittstellen",
+    "nav_title": "🔌 APIs & Schnittstellen",
+    "sec_title": "Datenkommunikation & APIs",
+    "cards": [
+      {
+        "term": "REST (Representational State Transfer)",
+        "desc": "Architekturstil für Webservices, nutzt Standard-HTTP-Methoden (GET, POST, PUT, DELETE) und oft JSON."
+      },
+      {
+        "term": "GraphQL",
+        "desc": "Abfragesprache für APIs, die es Clients ermöglicht, genau die Daten anzufordern, die sie benötigen (vermeidet Over/Under-Fetching)."
+      },
+      {
+        "term": "SOAP",
+        "desc": "Ein XML-basiertes Protokoll für den Austausch von Informationen in Webservices (oft starrer als REST)."
+      },
+      {
+        "term": "JSON",
+        "desc": "JavaScript Object Notation: Leichtgewichtiges, textbasiertes Datenaustauschformat, ideal für APIs."
+      },
+      {
+        "term": "JWT (JSON Web Token)",
+        "desc": "Kompaktes URL-sicheres Format zur Übertragung von Claims zwischen Parteien, häufig für Authentifizierung (Stateless)."
+      }
+    ]
+  },
+  {
+    "id": "testing_cicd",
+    "nav_title": "🧪 Testing & CI/CD",
+    "sec_title": "Qualitätssicherung & Automatisierung",
+    "cards": [
+      {
+        "term": "Unit Test",
+        "desc": "Testet die kleinste isolierte Code-Einheit (z.B. eine Methode/Funktion) auf Korrektheit."
+      },
+      {
+        "term": "Integrationstest",
+        "desc": "Testet das Zusammenspiel mehrerer Komponenten oder Module."
+      },
+      {
+        "term": "TDD (Test-Driven Development)",
+        "desc": "Entwicklungsmethode: Zuerst den fehlschlagenden Test schreiben, dann Code schreiben bis er besteht, anschließend Refactoring."
+      },
+      {
+        "term": "CI/CD",
+        "desc": "Continuous Integration (Regelmäßiges Zusammenführen & Testen) und Continuous Deployment/Delivery (Automatisches Ausliefern von Code)."
+      },
+      {
+        "term": "Mocking",
+        "desc": "Simulieren des Verhaltens echter Objekte in Unit-Tests (z.B. eine Datenbank-Schnittstelle faken)."
+      }
+    ]
+  },
+  {
     "id": "sec9",
     "nav_title": "🚦 HTTP-Statuscodes",
     "sec_title": "HTTP-Statuscodes",
@@ -1565,6 +1752,37 @@ const wikiData = [
       {
         "term": "511 Network Authentication Required",
         "desc": "Der Client muss sich authentifizieren, um Netzwerkzugriff zu erhalten."
+      }
+    ]
+  },
+  {
+    "id": "algo_datenstrukturen",
+    "nav_title": "🧮 Algo. & Datenstrukturen",
+    "sec_title": "Algorithmen & Big O",
+    "cards": [
+      {
+        "term": "Big-O Notation",
+        "desc": "Beschreibt die Laufzeit oder den Speicherbedarf eines Algorithmus (z.B. O(1), O(n), O(n^2))."
+      },
+      {
+        "term": "Array",
+        "desc": "Datenstruktur, die Elemente desselben Typs zusammenhängend im Speicher ablegt (feste Größe, O(1) Index-Zugriff)."
+      },
+      {
+        "term": "Linked List",
+        "desc": "Verkettete Liste: Elemente (Nodes) zeigen jeweils auf das nächste Element. Gut für schnelles Einfügen, schlecht für direkten Zugriff."
+      },
+      {
+        "term": "Hash Map / Dictionary",
+        "desc": "Speichert Schlüssel-Wert-Paare (Key-Value) für in der Regel sehr schnelle O(1) Suchzugriffe."
+      },
+      {
+        "term": "Binary Search",
+        "desc": "Suchalgorithmus auf sortierten Arrays, der das Suchfeld mit jedem Schritt halbiert (O(log n))."
+      },
+      {
+        "term": "Bubble Sort",
+        "desc": "Einfacher, ineffizienter Sortieralgorithmus (O(n^2)), bei dem benachbarte Elemente wiederholt getauscht werden."
       }
     ]
   },
@@ -1931,173 +2149,6 @@ const wikiData = [
       {
         "term": "TRUNCATE",
         "desc": "Löscht alle Datensätze in einer Tabelle schnell, ohne die Tabellenstruktur zu entfernen."
-      }
-    ]
-  },
-  {
-    "id": "sec11",
-    "nav_title": "☁️ Cloud & Container",
-    "sec_title": "Cloud & Container",
-    "cards": [
-      {
-        "term": "Affinity / Anti-Affinity",
-        "desc": "Regeln, welche Pods zusammen (oder getrennt) auf Nodes laufen."
-      },
-      {
-        "term": "Auto Scaling",
-        "desc": "Automatische Anpassung von Ressourcen basierend auf der Last."
-      },
-      {
-        "term": "Bicep / Terraform",
-        "desc": "IaC-Tools zur deklarativen Infrastruktur-Steuerung (Azure vs. Multi-Cloud)."
-      },
-      {
-        "term": "Block / BLOB Storage",
-        "desc": "Festplatten-Ersatz für VMs vs. günstiger Objektspeicher für Dateien."
-      },
-      {
-        "term": "Blue-Green Deployment",
-        "desc": "Zwei identische Umgebungen für risikofreie Versionswechsel."
-      },
-      {
-        "term": "Canary Deployment",
-        "desc": "Schrittweise Auslieferung neuer Versionen an kleine Nutzergruppen."
-      },
-      {
-        "term": "Cloud Native",
-        "desc": "Software-Design, das gezielt Cloud-Vorteile (Skalierung, Resilienz) nutzt."
-      },
-      {
-        "term": "Cluster Autoscaler",
-        "desc": "Passt die Anzahl der physischen Nodes im K8s-Cluster an."
-      },
-      {
-        "term": "ConfigMap / Secrets",
-        "desc": "Konfigurationsdaten für Pods (Unkritisch vs. Verschlüsselt)."
-      },
-      {
-        "term": "Container",
-        "desc": "Isolierte, leichtgewichtige Laufzeitumgebung für Anwendungen."
-      },
-      {
-        "term": "Container Registry",
-        "desc": "Zentrales Repository zum Speichern von Container-Images."
-      },
-      {
-        "term": "DaemonSet",
-        "desc": "Garantiert, dass ein bestimmter Pod auf jedem Node des Clusters läuft."
-      },
-      {
-        "term": "Declarative Configuration",
-        "desc": "Beschreibung des Zielzustands statt einzelner Befehle."
-      },
-      {
-        "term": "Docker & Image",
-        "desc": "Plattform für Container und deren statische Baupläne (Abbilder)."
-      },
-      {
-        "term": "Edge / Fog Computing",
-        "desc": "Datenverarbeitung nahe der Quelle vs. verteilte Zwischenschicht."
-      },
-      {
-        "term": "FaaS / Serverless",
-        "desc": "Ereignisgesteuerte Funktionsausführung ohne Server-Verwaltung."
-      },
-      {
-        "term": "Health Probe",
-        "desc": "Automatischer Check, ob ein Container noch lebt oder bereit ist."
-      },
-      {
-        "term": "Helm / Chart",
-        "desc": "Paketmanager für Kubernetes inkl. fertiger Deployment-Vorlagen."
-      },
-      {
-        "term": "Horizontal Scaling",
-        "desc": "Leistungssteigerung durch Hinzufügen weiterer Instanzen."
-      },
-      {
-        "term": "Hybrid / Multi-Cloud",
-        "desc": "Mix aus On-Premise/Cloud vs. Nutzung mehrerer Cloud-Anbieter."
-      },
-      {
-        "term": "IaaS / PaaS / SaaS",
-        "desc": "Ebenen der Cloud-Dienste: Infrastruktur, Plattform oder fertige Software."
-      },
-      {
-        "term": "IaC (Infrastructure as Code)",
-        "desc": "Infrastruktur-Verwaltung durch versionierbaren Programmiercode."
-      },
-      {
-        "term": "Immutable Infrastructure",
-        "desc": "Server werden bei Änderungen ersetzt, niemals im Betrieb modifiziert."
-      },
-      {
-        "term": "Infrastructure Drift",
-        "desc": "Abweichung zwischen realer Infrastruktur und IaC-Konfiguration."
-      },
-      {
-        "term": "Ingress Controller",
-        "desc": "Verwaltet den externen Zugriff (Routing/SSL) auf Cluster-Services."
-      },
-      {
-        "term": "Init / Sidecar Container",
-        "desc": "Hilfs-Container für Setup-Tasks vs. begleitende Logging/Proxy-Dienste."
-      },
-      {
-        "term": "Job / CronJob",
-        "desc": "Einmalige vs. zeitgesteuerte Aufgaben im Kubernetes-Cluster."
-      },
-      {
-        "term": "Kubelet",
-        "desc": "Der Agent, der auf jedem Node die Container-Ausführung steuert."
-      },
-      {
-        "term": "Kubernetes (K8s)",
-        "desc": "De-facto Standard zur Orchestrierung großer Container-Landschaften."
-      },
-      {
-        "term": "Load Balancer",
-        "desc": "Gleichmäßige Verteilung des Traffics auf mehrere Instanzen."
-      },
-      {
-        "term": "Node",
-        "desc": "Ein einzelner Server (virtuell oder physisch) innerhalb eines Clusters."
-      },
-      {
-        "term": "Persistent Volume",
-        "desc": "Dauerhafter Speicherplatz, der Container-Neustarts überlebt."
-      },
-      {
-        "term": "Pod & Deployment",
-        "desc": "Kleinste K8s-Einheit vs. Strategie für deren Auslieferung."
-      },
-      {
-        "term": "Pod Eviction",
-        "desc": "Erzwungenes Entfernen eines Pods (z.B. bei Ressourcenmangel)."
-      },
-      {
-        "term": "Rollback / Rolling Update",
-        "desc": "Rückkehr zur Vorversion vs. schrittweise Aktualisierung im Betrieb."
-      },
-      {
-        "term": "Service Account",
-        "desc": "Digitale Identität für Anwendungen innerhalb von Kubernetes."
-      },
-      {
-        "term": "Service Mesh",
-        "desc": "Infrastruktur-Layer für sichere Kommunikation zwischen Microservices."
-      },
-      {
-        "term": "StatefulSet",
-        "desc": "Verwaltet Pods, die eine feste Identität oder festen Speicher benötigen."
-      },
-      {
-        "term": "Vertical Scaling",
-        "desc": "Leistungssteigerung durch Aufrüsten einer bestehenden Maschine."
-      },
-      {
-        "term": "VM (Virtuelle Maschine)",
-        "desc": "Vollständige Hardware-Emulation inklusive eigenem Betriebssystem."
       }
     ]
   },
@@ -2544,229 +2595,527 @@ const wikiData = [
     ]
   },
   {
-    "id": "sec14",
-    "nav_title": "🔁 Async & Workflows",
-    "sec_title": "Nebenläufigkeit & Asynchronität",
+    "id": "sec11",
+    "nav_title": "☁️ Cloud & Container",
+    "sec_title": "Cloud & Container",
     "cards": [
       {
-        "term": "Async / Await",
-        "desc": "Schlüsselwörter für die einfache Steuerung asynchroner Programmflüsse."
+        "term": "Affinity / Anti-Affinity",
+        "desc": "Regeln, welche Pods zusammen (oder getrennt) auf Nodes laufen."
       },
       {
-        "term": "Async I/O",
-        "desc": "Asynchroner Zugriff auf Eingabe/Ausgabe, ohne den Thread während des Wartens zu blockieren."
+        "term": "Auto Scaling",
+        "desc": "Automatische Anpassung von Ressourcen basierend auf der Last."
       },
       {
-        "term": "Async Lock",
-        "desc": "Asynchrone Sperre, die den Task pausiert, aber den Thread für andere Aufgaben freigibt."
+        "term": "Bicep / Terraform",
+        "desc": "IaC-Tools zur deklarativen Infrastruktur-Steuerung (Azure vs. Multi-Cloud)."
       },
       {
-        "term": "Async Stream",
-        "desc": "Asynchroner Datenstrom (IAsyncEnumerable), der Werte nacheinander liefert, sobald sie bereit sind."
+        "term": "Block / BLOB Storage",
+        "desc": "Festplatten-Ersatz für VMs vs. günstiger Objektspeicher für Dateien."
       },
       {
-        "term": "Asynchronous Pipeline",
-        "desc": "Datenfluss-Modell, bei dem verschiedene Stufen einer Aufgabe parallel verarbeitet werden."
+        "term": "Blue-Green Deployment",
+        "desc": "Zwei identische Umgebungen für risikofreie Versionswechsel."
       },
       {
-        "term": "Atomic Operation",
-        "desc": "Unteilbare Operation auf CPU-Ebene, die nicht durch andere Threads unterbrochen werden kann."
+        "term": "Canary Deployment",
+        "desc": "Schrittweise Auslieferung neuer Versionen an kleine Nutzergruppen."
       },
       {
-        "term": "Auto Reset Event",
-        "desc": "Synchronisationsobjekt, das nach einer Freigabe automatisch wieder in den gesperrten Zustand springt."
+        "term": "Cloud Native",
+        "desc": "Software-Design, das gezielt Cloud-Vorteile (Skalierung, Resilienz) nutzt."
       },
       {
-        "term": "Awaitable",
-        "desc": "Ein Objekt (wie Task oder ValueTask), auf das mit dem await-Operator gewartet werden kann."
+        "term": "Cluster Autoscaler",
+        "desc": "Passt die Anzahl der physischen Nodes im K8s-Cluster an."
       },
       {
-        "term": "Backpressure",
-        "desc": "Mechanismus zur Flusssteuerung, um ein System vor Überlastung durch zu viele eingehende Daten zu schützen."
+        "term": "ConfigMap / Secrets",
+        "desc": "Konfigurationsdaten für Pods (Unkritisch vs. Verschlüsselt)."
       },
       {
-        "term": "Barrier",
-        "desc": "Ein Synchronisationspunkt, an dem mehrere Threads aufeinandertreffen müssen, bevor sie gemeinsam fortfahren."
+        "term": "Container",
+        "desc": "Isolierte, leichtgewichtige Laufzeitumgebung für Anwendungen."
       },
       {
-        "term": "Blocking Call",
-        "desc": "Ein Funktionsaufruf, der den aktuellen Thread komplett anhält, bis die Operation abgeschlossen ist."
+        "term": "Container Registry",
+        "desc": "Zentrales Repository zum Speichern von Container-Images."
       },
       {
-        "term": "Cancellation Token",
-        "desc": "Ein Signal-Objekt, mit dem laufende asynchrone Operationen sicher abgebrochen werden können."
+        "term": "DaemonSet",
+        "desc": "Garantiert, dass ein bestimmter Pod auf jedem Node des Clusters läuft."
       },
       {
-        "term": "Concurrent Queue",
-        "desc": "Eine thread-sichere Warteschlange, die parallele Lese- und Schreibzugriffe erlaubt."
+        "term": "Declarative Configuration",
+        "desc": "Beschreibung des Zielzustands statt einzelner Befehle."
       },
       {
-        "term": "Continuation",
-        "desc": "Ein Codeblock, der automatisch ausgeführt wird, sobald eine asynchrone Operation beendet ist."
+        "term": "Docker & Image",
+        "desc": "Plattform für Container und deren statische Baupläne (Abbilder)."
       },
       {
-        "term": "Countdown Event",
-        "desc": "Ein Synchronisationsobjekt, das einen Thread blockiert, bis eine bestimmte Anzahl an Tasks abgeschlossen ist."
+        "term": "Edge / Fog Computing",
+        "desc": "Datenverarbeitung nahe der Quelle vs. verteilte Zwischenschicht."
       },
       {
-        "term": "Critical Section",
-        "desc": "Ein Codebereich, der zur Vermeidung von Fehlern niemals von mehr als einem Thread gleichzeitig betreten werden darf."
+        "term": "FaaS / Serverless",
+        "desc": "Ereignisgesteuerte Funktionsausführung ohne Server-Verwaltung."
       },
       {
-        "term": "Deadlock",
-        "desc": "Ein Zustand, in dem sich zwei oder mehr Prozesse gegenseitig blockieren, weil jeder auf eine Ressource wartet, die der andere hält."
+        "term": "Health Probe",
+        "desc": "Automatischer Check, ob ein Container noch lebt oder bereit ist."
       },
       {
-        "term": "Event Loop",
-        "desc": "Der Kernmechanismus (z. B. in NodeJS), der asynchrone Ereignisse nacheinander abarbeitet."
+        "term": "Helm / Chart",
+        "desc": "Paketmanager für Kubernetes inkl. fertiger Deployment-Vorlagen."
       },
       {
-        "term": "Fiber",
-        "desc": "Ein extrem leichtgewichtiger \"Thread\", der vom Programm selbst und nicht vom Betriebssystem verwaltet wird."
+        "term": "Horizontal Scaling",
+        "desc": "Leistungssteigerung durch Hinzufügen weiterer Instanzen."
       },
       {
-        "term": "Green Thread",
-        "desc": "Ein von einer Laufzeitumgebung (VM) verwalteter Thread, der auf Betriebssystem-Threads abgebildet wird."
+        "term": "Hybrid / Multi-Cloud",
+        "desc": "Mix aus On-Premise/Cloud vs. Nutzung mehrerer Cloud-Anbieter."
       },
       {
-        "term": "Immutable Object",
-        "desc": "Ein Objekt, dessen Zustand nach der Erstellung nicht mehr geändert werden kann – dadurch ist es von Natur aus thread-sicher."
+        "term": "IaaS / PaaS / SaaS",
+        "desc": "Ebenen der Cloud-Dienste: Infrastruktur, Plattform oder fertige Software."
       },
       {
-        "term": "Livelock",
-        "desc": "Ein Zustand, in dem Prozesse zwar aktiv auf Ereignisse reagieren, sich aber gegenseitig so beeinflussen, dass kein echter Fortschritt erzielt wird."
+        "term": "IaC (Infrastructure as Code)",
+        "desc": "Infrastruktur-Verwaltung durch versionierbaren Programmiercode."
       },
       {
-        "term": "Lock-Free Algorithm",
-        "desc": "Ein Algorithmus, der ohne explizite Sperren (Locks) auskommt, um maximale Performance zu erzielen."
+        "term": "Immutable Infrastructure",
+        "desc": "Server werden bei Änderungen ersetzt, niemals im Betrieb modifiziert."
       },
       {
-        "term": "Main Thread",
-        "desc": "Der primäre Thread einer Anwendung, der den Startpunkt bildet und oft für die Programmlogik zuständig ist."
+        "term": "Infrastructure Drift",
+        "desc": "Abweichung zwischen realer Infrastruktur und IaC-Konfiguration."
       },
       {
-        "term": "Manual Reset Event",
-        "desc": "Ein Signal-Objekt, das so lange offen bleibt, bis es manuell wieder in den gesperrten Zustand gesetzt wird."
+        "term": "Ingress Controller",
+        "desc": "Verwaltet den externen Zugriff (Routing/SSL) auf Cluster-Services."
       },
       {
-        "term": "Memory Fence",
-        "desc": "Eine Barriere, die sicherstellt, dass Speicheroperationen in der korrekten Reihenfolge für alle Threads sichtbar werden."
+        "term": "Init / Sidecar Container",
+        "desc": "Hilfs-Container für Setup-Tasks vs. begleitende Logging/Proxy-Dienste."
       },
       {
-        "term": "Message Queue",
-        "desc": "Ein System zum asynchronen Austausch von Nachrichten zwischen verschiedenen Programmteilen oder Diensten."
+        "term": "Job / CronJob",
+        "desc": "Einmalige vs. zeitgesteuerte Aufgaben im Kubernetes-Cluster."
       },
       {
-        "term": "Monitor",
-        "desc": "Ein High-Level-Synchronisationsmechanismus, der exklusiven Zugriff auf ein Objekt garantiert."
+        "term": "Kubelet",
+        "desc": "Der Agent, der auf jedem Node die Container-Ausführung steuert."
       },
       {
-        "term": "Mutex",
-        "desc": "Ein \"Mutual Exclusion\"-Objekt (gegenseitiger Ausschluss), das als exklusive Sperre für Ressourcen dient."
+        "term": "Kubernetes (K8s)",
+        "desc": "De-facto Standard zur Orchestrierung großer Container-Landschaften."
       },
       {
-        "term": "Non-Blocking Call",
-        "desc": "Ein Aufruf, der sofort zurückkehrt, auch wenn die Operation im Hintergrund noch läuft; der Thread bleibt frei."
+        "term": "Load Balancer",
+        "desc": "Gleichmäßige Verteilung des Traffics auf mehrere Instanzen."
       },
       {
-        "term": "Out-of-Order Execution",
-        "desc": "Ein Performance-Feature moderner CPUs, bei dem Befehle zur Effizienzsteigerung nicht strikt in der programmierten Reihenfolge ausgeführt werden."
+        "term": "Node",
+        "desc": "Ein einzelner Server (virtuell oder physisch) innerhalb eines Clusters."
       },
       {
-        "term": "Parallel LINQ (PLINQ)",
-        "desc": "Eine Erweiterung von LINQ, die Abfragen automatisch auf mehrere CPU-Kerne verteilt."
+        "term": "Persistent Volume",
+        "desc": "Dauerhafter Speicherplatz, der Container-Neustarts überlebt."
       },
       {
-        "term": "Parallel.For",
-        "desc": "Ein Programmierkonstrukt, das die Iterationen einer Schleife automatisch parallel auf mehreren Threads ausführt."
+        "term": "Pod & Deployment",
+        "desc": "Kleinste K8s-Einheit vs. Strategie für deren Auslieferung."
       },
       {
-        "term": "Producer-Consumer",
-        "desc": "Ein Entwurfsmuster, bei dem ein Thread Daten erzeugt und ein anderer diese asynchron verarbeitet."
+        "term": "Pod Eviction",
+        "desc": "Erzwungenes Entfernen eines Pods (z.B. bei Ressourcenmangel)."
       },
       {
-        "term": "Queue",
-        "desc": "Eine Warteschlange zur geordneten, sequenziellen Abarbeitung von Aufgaben (First-In-First-Out)."
+        "term": "Rollback / Rolling Update",
+        "desc": "Rückkehr zur Vorversion vs. schrittweise Aktualisierung im Betrieb."
       },
       {
-        "term": "Race Condition",
-        "desc": "Ein Fehler, bei dem das Endergebnis vom unvorhersehbaren zeitlichen Ablauf paralleler Operationen abhängt."
+        "term": "Service Account",
+        "desc": "Digitale Identität für Anwendungen innerhalb von Kubernetes."
       },
       {
-        "term": "Scheduler Priority",
-        "desc": "Die Rangfolge, nach der das Betriebssystem entscheidet, welcher Thread als Nächstes Rechenzeit erhält."
+        "term": "Service Mesh",
+        "desc": "Infrastruktur-Layer für sichere Kommunikation zwischen Microservices."
       },
       {
-        "term": "Semaphore",
-        "desc": "Ein Zählmechanismus, der den gleichzeitigen Zugriff auf eine begrenzte Anzahl von Ressourcen regelt."
+        "term": "StatefulSet",
+        "desc": "Verwaltet Pods, die eine feste Identität oder festen Speicher benötigen."
       },
       {
-        "term": "SemaphoreSlim",
-        "desc": "Eine leichtgewichtigere .NET-Variante des Semaphors, optimiert für kurze Wartezeiten innerhalb einer Anwendung."
+        "term": "Vertical Scaling",
+        "desc": "Leistungssteigerung durch Aufrüsten einer bestehenden Maschine."
       },
       {
-        "term": "Speculative Execution",
-        "desc": "Die Vorwegnahme von Berechnungen durch die CPU, bevor sicher ist, ob das Ergebnis überhaupt benötigt wird."
+        "term": "VM (Virtuelle Maschine)",
+        "desc": "Vollständige Hardware-Emulation inklusive eigenem Betriebssystem."
+      }
+    ]
+  },
+  {
+    "id": "sec17",
+    "nav_title": "🐳 Docker Befehle",
+    "sec_title": "Docker Befehle",
+    "cards": [
+      {
+        "term": "docker build -t [name] .",
+        "desc": "Erstellt ein neues Docker-Image aus einem Dockerfile im aktuellen Verzeichnis."
       },
       {
-        "term": "Spinlock",
-        "desc": "Eine Sperre, bei der ein Thread in einer engen Schleife aktiv wartet, statt sich schlafen zu legen (effizient bei sehr kurzen Wartezeiten)."
+        "term": "docker exec -it [ID] /bin/bash",
+        "desc": "Öffnet ein Terminal direkt im laufenden Container."
       },
       {
-        "term": "Task",
-        "desc": "Eine logische Abstraktion für eine asynchrone Operation, die im Gegensatz zum Thread vom Framework verwaltet wird."
+        "term": "docker images",
+        "desc": "Anzeigen aller lokal gespeicherten Images."
       },
       {
-        "term": "Task Scheduler",
-        "desc": "Die Komponente, die entscheidet, wann und auf welchem Thread ein Task tatsächlich ausgeführt wird."
+        "term": "docker logs -f [ID]",
+        "desc": "Live-Verfolgung der Log-Ausgaben eines Containers."
       },
       {
-        "term": "Thread",
-        "desc": "Die kleinste vom Betriebssystem verwaltete Ausführungseinheit eines Programms."
+        "term": "docker ps",
+        "desc": "Listet alle aktuell laufenden Container auf."
       },
       {
-        "term": "Thread Affinity",
-        "desc": "Die Bindung einer Operation an einen ganz bestimmten Thread (z. B. müssen UI-Elemente oft im UI-Thread bleiben)."
+        "term": "docker pull [image]",
+        "desc": "Lädt ein Image aus einer Registry (z. B. Docker Hub) herunter."
       },
       {
-        "term": "Thread Context Switch",
-        "desc": "Der rechenintensive Vorgang, bei dem die CPU den aktuellen Thread-Zustand speichert und zu einem anderen Thread wechselt."
+        "term": "docker push [image]",
+        "desc": "Lädt ein lokales Image in eine Registry hoch."
       },
       {
-        "term": "Thread Pool",
-        "desc": "Ein Reservoir an bereits erstellten Threads, die für neue Aufgaben wiederverwendet werden, um Erzeugungskosten zu sparen."
+        "term": "docker rm [container]",
+        "desc": "Löscht einen gestoppten Container."
       },
       {
-        "term": "Thread Pool Queue",
-        "desc": "Die interne Warteschlange des Thread Pools, in der Aufgaben auf einen freien Thread warten."
+        "term": "docker rmi [image]",
+        "desc": "Löscht ein lokales Docker-Image."
       },
       {
-        "term": "Thread Starvation",
-        "desc": "Ein Problem, bei dem ein Thread niemals Rechenzeit erhält, weil andere Threads ständig bevorzugt werden."
+        "term": "docker system prune",
+        "desc": "Löscht alle ungenutzten Daten (Images, Container, Netzwerke)."
       },
       {
-        "term": "Thread-Safe",
-        "desc": "Code, der garantiert korrekt funktioniert, auch wenn er von mehreren Threads gleichzeitig ausgeführt wird."
+        "term": "docker-compose up -d",
+        "desc": "Startet die gesamte Umgebung im Hintergrund (Detached)."
       },
       {
-        "term": "UI Thread",
-        "desc": "Ein spezieller Thread, der ausschließlich für die Verarbeitung von Benutzereingaben und die Aktualisierung der Oberfläche zuständig ist."
+        "term": "docker compose",
+        "desc": "Werkzeug zur Definition und Ausführung von Multi-Container-Docker-Anwendungen."
       },
       {
-        "term": "Wait-Free",
-        "desc": "Die stärkste Garantie für Algorithmen: Jeder Thread wird garantiert nach einer festen Anzahl von Schritten fertig, unabhängig von anderen Threads."
+        "term": "docker exec -it",
+        "desc": "Führt einen Befehl (oft eine interaktive Shell) in einem laufenden Container aus."
+      }
+    ]
+  },
+  {
+    "id": "sec5",
+    "nav_title": "🔧 Git & Versionierung",
+    "sec_title": "Git & Versionskontrolle",
+    "cards": [
+      {
+        "term": "Blame",
+        "desc": "Zeigt für jede Codezeile an, welcher Autor sie wann zuletzt geändert hat."
       },
       {
-        "term": "Work Stealing",
-        "desc": "Ein Algorithmus im Scheduler, bei dem untätige Threads Aufgaben von überlasteten Threads \"stehlen\", um die CPU-Last zu verteilen."
+        "term": "Branch",
+        "desc": "Ein isolierter, paralleler Entwicklungszweig für Features oder Bugfixes."
       },
       {
-        "term": "Worker Thread",
-        "desc": "Ein Hintergrund-Thread, der rechenintensive Aufgaben übernimmt, ohne die Benutzeroberfläche zu blockieren."
+        "term": "Cherry-Pick",
+        "desc": "Einen ganz gezielten, einzelnen Commit aus einem anderen Branch übernehmen."
       },
       {
-        "term": "Promise",
-        "desc": "Ein Objekt, das den eventuellen Abschluss (oder Fehlschlag) einer asynchronen Operation repräsentiert."
+        "term": "Commit",
+        "desc": "Ein gespeicherter Schnappschuss (Snapshot) von Code-Änderungen inkl. Nachricht."
+      },
+      {
+        "term": "Conflict",
+        "desc": "Tritt auf, wenn zwei Personen dieselbe Zeile unterschiedlich geändert haben (Merge-Konflikt)."
+      },
+      {
+        "term": "Detached HEAD",
+        "desc": "Zustand, in dem kein Branch ausgewählt ist, sondern direkt auf einem Commit gearbeitet wird."
+      },
+      {
+        "term": "Fast-Forward",
+        "desc": "Ein Merge, bei dem der Branch-Zeiger einfach auf den neuesten Commit verschoben wird."
+      },
+      {
+        "term": "Fetch",
+        "desc": "Ruft Informationen über Änderungen vom Server ab, ohne sie lokal zusammenzuführen."
+      },
+      {
+        "term": "Fork",
+        "desc": "Eine vollständige Kopie eines Repositories auf dem Server (oft für Open Source Beiträge)."
+      },
+      {
+        "term": "Git Flow",
+        "desc": "Ein Branching-Modell, das Branches für Features, Releases und Hotfixes strikt trennt."
+      },
+      {
+        "term": "Git Hooks",
+        "desc": "Skripte, die automatisch bei Ereignissen (z. B. vor einem Commit) ausgeführt werden."
+      },
+      {
+        "term": "Merge",
+        "desc": "Das Zusammenführen von Änderungen aus verschiedenen Zweigen zu einem gemeinsamen Stand."
+      },
+      {
+        "term": "Origin / Upstream",
+        "desc": "Standardname für den Hauptserver (Remote) vs. das Original-Repo bei einem Fork."
+      },
+      {
+        "term": "Pull",
+        "desc": "Kombination aus Fetch und Merge: Änderungen laden und sofort lokal einspielen."
+      },
+      {
+        "term": "Pull Request (PR)",
+        "desc": "Förmlicher Vorschlag, Code-Änderungen zu prüfen und in einen Hauptzweig zu mergen."
+      },
+      {
+        "term": "Push",
+        "desc": "Lokale Commits auf den entfernten Server (Remote) hochladen."
+      },
+      {
+        "term": "Rebase",
+        "desc": "Die Basis eines Branches auf einen neuen Startpunkt setzen, um eine lineare Historie zu erhalten."
+      },
+      {
+        "term": "Repository",
+        "desc": "Das gesamte Projektverzeichnis inklusive der kompletten Versionshistorie."
+      },
+      {
+        "term": "Reset",
+        "desc": "Macht Commits rückgängig, wahlweise durch Löschen oder Beibehalten der Änderungen im Arbeitsverzeichnis."
+      },
+      {
+        "term": "Revert",
+        "desc": "Erstellt einen neuen Commit, der die Änderungen eines vorherigen Commits umkehrt."
+      },
+      {
+        "term": "Squash",
+        "desc": "Mehrere kleine Commits zu einem einzigen, sauberen Commit zusammenfassen."
+      },
+      {
+        "term": "Stash",
+        "desc": "Aktuelle, unfertige Änderungen kurzzeitig in einen Zwischenspeicher (\"Parkplatz\") legen."
+      },
+      {
+        "term": "Tag",
+        "desc": "Ein fester, benannter Marker in der Historie, meist zur Kennzeichnung von Release-Versionen."
+      },
+      {
+        "term": "git stash",
+        "desc": "Speichert unvollendete Änderungen temporär ab, um ein sauberes Arbeitsverzeichnis zu erhalten."
+      },
+      {
+        "term": "git rebase",
+        "desc": "Integriert Änderungen aus einem Branch in einen anderen, schreibt aber die Commit-Historie neu (linear)."
+      }
+    ]
+  },
+  {
+    "id": "sec6",
+    "nav_title": "🐞 Debugging & Tests",
+    "sec_title": "Debugging & Tests",
+    "cards": [
+      {
+        "term": "AAA-Pattern",
+        "desc": "Strukturierung von Tests in Arrange (Vorbereitung), Act (Ausführung) und Assert (Prüfung)."
+      },
+      {
+        "term": "Assertion",
+        "desc": "Die erwartete Bedingung in einem Test; schlägt der Vergleich fehl, scheitert der Test."
+      },
+      {
+        "term": "BDD",
+        "desc": "Behavior Driven Development: Test-Schreibweise aus Nutzersicht (Given/When/Then)."
+      },
+      {
+        "term": "Breakpoint",
+        "desc": "Manueller Haltepunkt im Code, um Variablen und Programmfluss live zu untersuchen."
+      },
+      {
+        "term": "Coverage",
+        "desc": "Testabdeckung: Prozentsatz des Quellcodes, der durch automatisierte Tests ausgeführt wurde."
+      },
+      {
+        "term": "E2E Test",
+        "desc": "End-to-End Test: Prüft einen kompletten Geschäftsprozess vom Start bis zum Ziel."
+      },
+      {
+        "term": "Fake",
+        "desc": "Eine einfache, funktionale Implementierung (z.B. In-Memory-DB statt echter Datenbank)."
+      },
+      {
+        "term": "Flaky Test",
+        "desc": "Ein unzuverlässiger Test, der bei gleichem Code mal besteht und mal fehlschlägt."
+      },
+      {
+        "term": "Fuzzer",
+        "desc": "Automatisierter Test, der ein Programm mit massenhaft Zufallsdaten flutet, um Abstürze zu finden."
+      },
+      {
+        "term": "Hot Reload",
+        "desc": "Sofortige Übernahme von Code-Änderungen in die laufende App ohne kompletten Neustart."
+      },
+      {
+        "term": "Integration Test",
+        "desc": "Überprüft das korrekte Zusammenspiel zwischen zwei oder mehr Modulen oder Systemen."
+      },
+      {
+        "term": "Mock",
+        "desc": "Ein simulierter Ersatz für Abhängigkeiten, der Erwartungen über Aufrufe prüfen kann."
+      },
+      {
+        "term": "Mutation Testing",
+        "desc": "Verändert den Code minimal, um zu prüfen, ob die vorhandenen Tests diesen Fehler finden."
+      },
+      {
+        "term": "Profiling",
+        "desc": "Analyse der Laufzeit und des Speicherverbrauchs, um Performance-Engpässe zu finden."
+      },
+      {
+        "term": "Regression Test",
+        "desc": "Wiederholter Test nach Änderungen, um sicherzustellen, dass alte Funktionen noch arbeiten."
+      },
+      {
+        "term": "Smoke Test",
+        "desc": "Ein schneller Oberflächentest, um zu prüfen, ob die Basis-Funktionen überhaupt starten."
+      },
+      {
+        "term": "Snapshot Test",
+        "desc": "Vergleicht die aktuelle UI oder Datenstruktur mit einem gespeicherten \"Soll-Zustand\"."
+      },
+      {
+        "term": "Stub",
+        "desc": "Ein minimaler Platzhalter, der auf Aufrufe lediglich mit festen Werten antwortet."
+      },
+      {
+        "term": "TDD",
+        "desc": "Test Driven Development: Der Test wird vor dem eigentlichen Funktionscode geschrieben."
+      },
+      {
+        "term": "Unit Test",
+        "desc": "Automatisierter Test der kleinstmöglichen Einheit (z. B. einer einzelnen Methode)."
+      },
+      {
+        "term": "Watch",
+        "desc": "Überwachungstool im Debugger, das den Wert bestimmter Variablen permanent anzeigt."
+      },
+      {
+        "term": "Mocking",
+        "desc": "Das Simulieren des Verhaltens echter Objekte in Unit-Tests (z.B. Datenbank-Verbindungen)."
+      }
+    ]
+  },
+  {
+    "id": "netzwerk_grundlagen",
+    "nav_title": "🌐 Netzwerk-Grundlagen",
+    "sec_title": "Network Basics",
+    "cards": [
+      {
+        "term": "OSI-Modell",
+        "desc": "Referenzmodell für Netzwerkprotokolle in 7 Schichten (Physical, Data Link, Network, Transport, Session, Presentation, Application)."
+      },
+      {
+        "term": "TCP/IP",
+        "desc": "Protokollfamilie, die das Internet antreibt. TCP sorgt für zuverlässigen Datenstrom, IP für das Routing der Pakete."
+      },
+      {
+        "term": "DNS (Domain Name System)",
+        "desc": "Übersetzt für Menschen lesbare Domainnamen (z.B. google.com) in IP-Adressen (wie ein Telefonbuch)."
+      },
+      {
+        "term": "DHCP",
+        "desc": "Dynamic Host Configuration Protocol: Weist Geräten in einem Netzwerk automatisch IP-Adressen zu."
+      },
+      {
+        "term": "Subnetting",
+        "desc": "Unterteilen eines großen Netzwerks in mehrere kleinere Netzwerke zur besseren Organisation und Performance."
+      }
+    ]
+  },
+  {
+    "id": "sec25",
+    "nav_title": "🦈 Wireshark & Network",
+    "sec_title": "Wireshark & Netzwerkanalyse",
+    "cards": [
+      {
+        "term": "Analyseprofile",
+        "desc": "Profile für Netzwerk-Paketanalysatoren optimieren und anpassen.",
+        "onclick": "openPDF('Analyseprofile_für_Netzwerk-Paketanalysatoren.pdf')"
+      },
+      {
+        "term": "Netzwerk-Analyse-Filter",
+        "desc": "Der Guide für effiziente Filter in der Netzwerkanalyse.",
+        "onclick": "openPDF('Guide_für_Netzwerk-Analyse-Filter.pdf')"
+      },
+      {
+        "term": "IPv4-Header Troubleshooting",
+        "desc": "Detaillierter Guide zur Fehlersuche anhand des IPv4-Headers.",
+        "onclick": "openPDF('IPv4-Header_Troubleshooting-Guide.pdf')"
+      },
+      {
+        "term": "Logik-Check Negations-Filter",
+        "desc": "Vermeidung von Fehlern bei Negations-Filtern.",
+        "onclick": "openPDF('Logik-Check_bei_Negations-Filtern.pdf')"
+      },
+      {
+        "term": "Namensauflösung",
+        "desc": "Erklärung der Namensauflösung in der Netzwerkanalyse.",
+        "onclick": "openPDF('Namensauflösung_in_der_Netzwerkanalyse.pdf')"
+      },
+      {
+        "term": "Filter: Erfassung vs. Anzeige",
+        "desc": "Unterschiede und Guide: Capture- vs. Display-Filter.",
+        "onclick": "openPDF('Netzwerk-Filter-Guide__Erfassung_vs._Anzeige.pdf')"
+      },
+      {
+        "term": "Netzwerk-Forensik",
+        "desc": "Angriffe mit Display-Filtern entlarven.",
+        "onclick": "openPDF('Netzwerk-Forensik__Angriffe_mit_Display-Filtern_entlarven.pdf')"
+      },
+      {
+        "term": "Basiswissen Netzwerkanalyse",
+        "desc": "Der ultimative Guide für den Einstieg in die Netzwerkanalyse.",
+        "onclick": "openPDF('Netzwerkanalyse-Basiswissen__Der_ultimative_Guide.pdf')"
+      },
+      {
+        "term": "TCP-Fehlersuche",
+        "desc": "Systematische Fehlersuche auf Basis des TCP-Protokolls.",
+        "onclick": "openPDF('TCP-Fehlersuche_in_der_Netzwerkanalyse.pdf')"
+      },
+      {
+        "term": "Latenz-Diagnose",
+        "desc": "Visuelle Netzwerkanalyse und Diagnose von Latenzen.",
+        "onclick": "openPDF('Visuelle_Netzwerkanalyse_und_Latenz-Diagnose.pdf')"
+      },
+      {
+        "term": "Automatisierte Werkzeuge",
+        "desc": "Übersicht über Werkzeuge für die automatisierte Netzwerk-Analyse.",
+        "onclick": "openPDF('Werkzeuge_für_automatisierte_Netzwerk-Analyse.pdf')"
+      },
+      {
+        "term": "Top Erfassungsfilter (Capture)",
+        "desc": "host x.x.x.x (Traffic für IP), net 192.168.1.0/24 (Subnetz), port 80 (nur Port 80), not arp (ARP ausblenden), tcp portrange 1500-1599."
+      },
+      {
+        "term": "Top Anzeigefilter (Display)",
+        "desc": "ip.addr==x.x.x.x (IP Traffic), tcp.port==443 (HTTPS), http.request.method==GET, dns.qry.name contains \"google\", tcp.analysis.flags (Probleme)."
       }
     ]
   },
@@ -3246,65 +3595,6 @@ const wikiData = [
       {
         "term": "Markdown",
         "desc": "Eine leichtgewichtige Auszeichnungssprache, um Text einfach zu formatieren (z.B. für READMEs)."
-      }
-    ]
-  },
-  {
-    "id": "sec17",
-    "nav_title": "🐳 Docker Befehle",
-    "sec_title": "Docker Befehle",
-    "cards": [
-      {
-        "term": "docker build -t [name] .",
-        "desc": "Erstellt ein neues Docker-Image aus einem Dockerfile im aktuellen Verzeichnis."
-      },
-      {
-        "term": "docker exec -it [ID] /bin/bash",
-        "desc": "Öffnet ein Terminal direkt im laufenden Container."
-      },
-      {
-        "term": "docker images",
-        "desc": "Anzeigen aller lokal gespeicherten Images."
-      },
-      {
-        "term": "docker logs -f [ID]",
-        "desc": "Live-Verfolgung der Log-Ausgaben eines Containers."
-      },
-      {
-        "term": "docker ps",
-        "desc": "Listet alle aktuell laufenden Container auf."
-      },
-      {
-        "term": "docker pull [image]",
-        "desc": "Lädt ein Image aus einer Registry (z. B. Docker Hub) herunter."
-      },
-      {
-        "term": "docker push [image]",
-        "desc": "Lädt ein lokales Image in eine Registry hoch."
-      },
-      {
-        "term": "docker rm [container]",
-        "desc": "Löscht einen gestoppten Container."
-      },
-      {
-        "term": "docker rmi [image]",
-        "desc": "Löscht ein lokales Docker-Image."
-      },
-      {
-        "term": "docker system prune",
-        "desc": "Löscht alle ungenutzten Daten (Images, Container, Netzwerke)."
-      },
-      {
-        "term": "docker-compose up -d",
-        "desc": "Startet die gesamte Umgebung im Hintergrund (Detached)."
-      },
-      {
-        "term": "docker compose",
-        "desc": "Werkzeug zur Definition und Ausführung von Multi-Container-Docker-Anwendungen."
-      },
-      {
-        "term": "docker exec -it",
-        "desc": "Führt einen Befehl (oft eine interaktive Shell) in einem laufenden Container aus."
       }
     ]
   },
@@ -3890,76 +4180,6 @@ const wikiData = [
       {
         "term": "In production",
         "desc": "Der Ort, an dem sich herausstellt, dass 'works on my machine' nicht genug war."
-      }
-    ]
-  },
-  {
-    "id": "sec25",
-    "nav_title": "🦈 Wireshark & Network",
-    "sec_title": "Wireshark & Netzwerkanalyse",
-    "cards": [
-      {
-        "term": "Analyseprofile",
-        "desc": "Profile für Netzwerk-Paketanalysatoren optimieren und anpassen.",
-        "onclick": "openPDF('Analyseprofile_für_Netzwerk-Paketanalysatoren.pdf')"
-      },
-      {
-        "term": "Netzwerk-Analyse-Filter",
-        "desc": "Der Guide für effiziente Filter in der Netzwerkanalyse.",
-        "onclick": "openPDF('Guide_für_Netzwerk-Analyse-Filter.pdf')"
-      },
-      {
-        "term": "IPv4-Header Troubleshooting",
-        "desc": "Detaillierter Guide zur Fehlersuche anhand des IPv4-Headers.",
-        "onclick": "openPDF('IPv4-Header_Troubleshooting-Guide.pdf')"
-      },
-      {
-        "term": "Logik-Check Negations-Filter",
-        "desc": "Vermeidung von Fehlern bei Negations-Filtern.",
-        "onclick": "openPDF('Logik-Check_bei_Negations-Filtern.pdf')"
-      },
-      {
-        "term": "Namensauflösung",
-        "desc": "Erklärung der Namensauflösung in der Netzwerkanalyse.",
-        "onclick": "openPDF('Namensauflösung_in_der_Netzwerkanalyse.pdf')"
-      },
-      {
-        "term": "Filter: Erfassung vs. Anzeige",
-        "desc": "Unterschiede und Guide: Capture- vs. Display-Filter.",
-        "onclick": "openPDF('Netzwerk-Filter-Guide__Erfassung_vs._Anzeige.pdf')"
-      },
-      {
-        "term": "Netzwerk-Forensik",
-        "desc": "Angriffe mit Display-Filtern entlarven.",
-        "onclick": "openPDF('Netzwerk-Forensik__Angriffe_mit_Display-Filtern_entlarven.pdf')"
-      },
-      {
-        "term": "Basiswissen Netzwerkanalyse",
-        "desc": "Der ultimative Guide für den Einstieg in die Netzwerkanalyse.",
-        "onclick": "openPDF('Netzwerkanalyse-Basiswissen__Der_ultimative_Guide.pdf')"
-      },
-      {
-        "term": "TCP-Fehlersuche",
-        "desc": "Systematische Fehlersuche auf Basis des TCP-Protokolls.",
-        "onclick": "openPDF('TCP-Fehlersuche_in_der_Netzwerkanalyse.pdf')"
-      },
-      {
-        "term": "Latenz-Diagnose",
-        "desc": "Visuelle Netzwerkanalyse und Diagnose von Latenzen.",
-        "onclick": "openPDF('Visuelle_Netzwerkanalyse_und_Latenz-Diagnose.pdf')"
-      },
-      {
-        "term": "Automatisierte Werkzeuge",
-        "desc": "Übersicht über Werkzeuge für die automatisierte Netzwerk-Analyse.",
-        "onclick": "openPDF('Werkzeuge_für_automatisierte_Netzwerk-Analyse.pdf')"
-      },
-      {
-        "term": "Top Erfassungsfilter (Capture)",
-        "desc": "host x.x.x.x (Traffic für IP), net 192.168.1.0/24 (Subnetz), port 80 (nur Port 80), not arp (ARP ausblenden), tcp portrange 1500-1599."
-      },
-      {
-        "term": "Top Anzeigefilter (Display)",
-        "desc": "ip.addr==x.x.x.x (IP Traffic), tcp.port==443 (HTTPS), http.request.method==GET, dns.qry.name contains \"google\", tcp.analysis.flags (Probleme)."
       }
     ]
   }
