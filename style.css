@@ -13,7 +13,7 @@
             --radius: 6px;
         }
         * { box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; background: var(--content-bg); color: var(--text-dark); margin: 0; display: flex; height: 100vh; overflow: hidden; }
+        body { font-family: 'Inter', sans-serif; background: var(--content-bg); color: var(--text-dark); margin: 0; display: flex; height: 100vh; height: 100dvh; overflow: hidden; }
 
         /* Typography */
         h1, h2, .term, .section-title, nav h2 {
@@ -21,7 +21,7 @@
         }
 
         /* Sidebar Navigation */
-        nav { width: var(--sidebar-w); background: var(--bg); height: 100%; padding: 25px; overflow-y: auto; color: var(--text-dark); flex-shrink: 0; border-right: 1px solid var(--border-color); }
+        nav { width: var(--sidebar-w); background: var(--bg); height: 100%; padding: 25px 25px 80px 25px; -webkit-overflow-scrolling: touch; overflow-y: auto; color: var(--text-dark); flex-shrink: 0; border-right: 1px solid var(--border-color); }
         nav > div { font-family: 'JetBrains Mono', monospace; color: var(--text-dark) !important; font-size: 1.2rem; margin-bottom: 30px; display: flex; align-items: center; gap: 8px;}
         nav > div::before { content: '>'; color: var(--primary); font-weight: bold;}
         nav h2 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin: 25px 0 15px; border-bottom: 1px solid var(--border-color); padding-bottom: 5px; }
