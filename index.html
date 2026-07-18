@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer-Wiki</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
 
@@ -22,7 +23,17 @@
 <main>
     <div class="header-area">
         <h1 id="page-title">Wissensdatenbank</h1>
-        <input type="search" class="search-box" id="search" placeholder="Suchen...">
+        <div class="controls-area">
+            <label class="control-toggle">
+                <input type="checkbox" id="quiz-mode-toggle">
+                <span>Lern-Modus 🧠</span>
+            </label>
+            <label class="control-toggle">
+                <input type="checkbox" id="favorites-toggle">
+                <span>Nur Favoriten ⭐</span>
+            </label>
+        </div>
+        <input type="search" class="search-box" id="search" placeholder="Suchen... (Strg+K oder /)">
     </div>
 
     <div id="main-container">
@@ -38,6 +49,9 @@
         <iframe id="pdfFrame" src=""></iframe>
     </div>
 </div>
+
+<!-- Back to top button -->
+<button id="back-to-top" class="back-to-top" title="Nach oben" onclick="scrollToTop()">↑</button>
 
 <script src="data.js"></script>
 <script src="script.js"></script>
