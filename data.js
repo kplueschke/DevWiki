@@ -7140,5 +7140,285 @@ const wikiData = [
         ]
       }
     ]
+  },
+  {
+    "id": "sec26",
+    "nav_title": "📈 IHK-Diagramme & Prozesse",
+    "sec_title": "IHK-Diagramme & Prozesse",
+    "cards": [
+      {
+        "term": "Struktogramm (Nassi-Shneiderman)",
+        "desc": "Entwurfsmethode für die strukturierte Programmierung. Visualisiert Kontrollstrukturen (Sequenz, Auswahl, Iteration) als verschachtelte Blöcke.",
+        "tags": [
+          "Modellierung",
+          "IHK"
+        ]
+      },
+      {
+        "term": "Programmablaufplan (PAP)",
+        "desc": "Grafische Darstellung zur Umsetzung eines Algorithmus oder Prozesses. Nutzt genormte Symbole nach DIN 66001.",
+        "tags": [
+          "Modellierung",
+          "IHK"
+        ]
+      },
+      {
+        "term": "EPK (Ereignisgesteuerte Prozesskette)",
+        "desc": "Grafische Modellierungssprache zur Darstellung von Geschäftsprozessen. Besteht immer abwechselnd aus Ereignissen und Funktionen.",
+        "tags": [
+          "Prozesse",
+          "IHK"
+        ]
+      },
+      {
+        "term": "Netzplantechnik",
+        "desc": "Methode zur Planung, Steuerung und Überwachung von Projekten. Bestimmt den kritischen Pfad und Pufferzeiten von Vorgängen.",
+        "tags": [
+          "Projektmanagement",
+          "IHK"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sec27",
+    "nav_title": "💼 Wirtschaft & IT-Recht",
+    "sec_title": "Wirtschaft & IT-Recht",
+    "cards": [
+      {
+        "term": "Werkvertrag",
+        "desc": "Vertrag, bei dem ein bestimmter Erfolg (ein 'Werk') geschuldet wird, nicht nur eine Leistung. Der Auftragnehmer trägt das Risiko.",
+        "tags": [
+          "Recht",
+          "WiSo"
+        ]
+      },
+      {
+        "term": "Dienstvertrag",
+        "desc": "Vertrag, bei dem eine Leistung (z. B. Arbeitszeit) geschuldet wird, aber kein bestimmter Erfolg garantiert ist.",
+        "tags": [
+          "Recht",
+          "WiSo"
+        ]
+      },
+      {
+        "term": "SLA (Service Level Agreement)",
+        "desc": "Vereinbarung zwischen Anbieter und Kunde über genaue Dienstleistungseigenschaften (z. B. 99,9% Verfügbarkeit).",
+        "tags": [
+          "IT-Service",
+          "WiSo"
+        ]
+      },
+      {
+        "term": "Softwarelizenzen",
+        "desc": "Regeln die Nutzungsrechte an Software. Unterscheidung u. a. in proprietär (geschlossen), Copyleft (GPL) und permissiv (MIT, Apache).",
+        "tags": [
+          "Recht",
+          "Open Source"
+        ]
+      },
+      {
+        "term": "DSGVO (Datenschutz-Grundverordnung)",
+        "desc": "EU-Verordnung, die den Umgang mit personenbezogenen Daten regelt (z. B. Zweckbindung, Datenminimierung, Recht auf Vergessenwerden).",
+        "tags": [
+          "Recht",
+          "Security"
+        ]
+      },
+      {
+        "term": "Make-or-Buy-Entscheidung",
+        "desc": "Kaufmännische Abwägung, ob eine Software oder Komponente selbst entwickelt (Make) oder eingekauft (Buy) werden soll.",
+        "tags": [
+          "Wirtschaft",
+          "WiSo"
+        ]
+      },
+      {
+        "term": "Amortisationsrechnung",
+        "desc": "Berechnung der Zeit, die benötigt wird, bis die Einnahmen (oder Einsparungen) einer Investition deren Kosten decken.",
+        "tags": [
+          "Wirtschaft",
+          "Kalkulation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sec28",
+    "nav_title": "🔐 Authentifizierung & Security",
+    "sec_title": "Authentifizierung & Security",
+    "cards": [
+      {
+        "term": "JWT (JSON Web Token)",
+        "desc": "Ein offener Standard (RFC 7519) für die sichere Übertragung von Informationen zwischen Parteien als JSON-Objekt, oft für API-Authentifizierung genutzt.",
+        "tags": [
+          "Security",
+          "API"
+        ]
+      },
+      {
+        "term": "OAuth2",
+        "desc": "Ein Autorisierungs-Framework, das Anwendungen begrenzten Zugriff auf Nutzerkonten bei einem HTTP-Dienst ermöglicht.",
+        "tags": [
+          "Security",
+          "Web"
+        ]
+      },
+      {
+        "term": "OpenID Connect (OIDC)",
+        "desc": "Eine Identitätsschicht auf Basis des OAuth 2.0-Protokolls. Ermöglicht die Authentifizierung von Nutzern.",
+        "tags": [
+          "Security",
+          "Web"
+        ]
+      },
+      {
+        "term": "SSO (Single Sign-On)",
+        "desc": "Ein Verfahren, bei dem ein Benutzer nach einer einmaligen Anmeldung auf verschiedene Systeme zugreifen kann.",
+        "tags": [
+          "Security",
+          "Architektur"
+        ]
+      },
+      {
+        "term": "MFA (Multi-Factor Authentication)",
+        "desc": "Sicherheitsverfahren, das zwei oder mehr unabhängige Berechtigungsnachweise zur Überprüfung einer Identität erfordert (Wissen, Besitz, Inhärenz).",
+        "tags": [
+          "Security",
+          "Identität"
+        ]
+      },
+      {
+        "term": "Hashing vs. Verschlüsselung",
+        "desc": "Hashing (z. B. SHA-256) ist eine Einwegfunktion (Passwortspeicherung). Verschlüsselung (z. B. AES) ist umkehrbar (Datenübertragung).",
+        "tags": [
+          "Security",
+          "Konzepte"
+        ]
+      },
+      {
+        "term": "Salting",
+        "desc": "Das Hinzufügen von zufälligen Daten (Salt) zu einem Passwort vor dem Hashing, um Rainbow-Table-Angriffe zu erschweren.",
+        "tags": [
+          "Security",
+          "Krypto"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sec29",
+    "nav_title": "🟣 C# / .NET Spezifika",
+    "sec_title": "C# / .NET Spezifika",
+    "cards": [
+      {
+        "term": "LINQ (Language Integrated Query)",
+        "desc": "Eine C#-Erweiterung, die Abfragen direkt in die Sprache integriert (für Collections, Datenbanken, XML).",
+        "tags": [
+          "C#",
+          ".NET",
+          "Daten"
+        ]
+      },
+      {
+        "term": "Entity Framework (EF Core)",
+        "desc": "Ein objektrelationaler Mapper (ORM) für .NET, der die Arbeit mit Datenbanken über C#-Objekte statt SQL ermöglicht.",
+        "tags": [
+          "C#",
+          ".NET",
+          "Datenbank"
+        ]
+      },
+      {
+        "term": "Dependency Injection (DI)",
+        "desc": "Ein Entwurfsmuster in .NET, bei dem Abhängigkeiten (z. B. Services) von außen in eine Klasse injiziert werden, oft über den Konstruktor.",
+        "tags": [
+          "Architektur",
+          "C#",
+          "Pattern"
+        ]
+      },
+      {
+        "term": "Inversion of Control (IoC)",
+        "desc": "Prinzip, bei dem die Steuerung des Programmflusses von einem externen Framework übernommen wird (z. B. durch einen DI-Container).",
+        "tags": [
+          "Architektur",
+          "Prinzipien"
+        ]
+      },
+      {
+        "term": "Garbage Collection (GC)",
+        "desc": "Automatischer Speicherbereinigungsmechanismus in .NET, der nicht mehr referenzierten Speicher freigibt.",
+        "tags": [
+          ".NET",
+          "Performance",
+          "Memory"
+        ]
+      },
+      {
+        "term": "NuGet",
+        "desc": "Der offizielle Paketmanager für .NET. Erleichtert das Einbinden von Bibliotheken und Abhängigkeiten.",
+        "tags": [
+          ".NET",
+          "Tooling"
+        ]
+      },
+      {
+        "term": "Delegates & Events",
+        "desc": "Delegates sind typsichere Funktionszeiger in C#. Events basieren darauf und dienen der Implementierung des Publisher-Subscriber-Patterns.",
+        "tags": [
+          "C#",
+          "Konzepte"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sec30",
+    "nav_title": "🏗️ Modernes Deployment & Workflows",
+    "sec_title": "Modernes Deployment & Workflows",
+    "cards": [
+      {
+        "term": "Barrierefreiheit (a11y / WCAG)",
+        "desc": "Accessibility (a11y) stellt sicher, dass Anwendungen für Menschen mit Einschränkungen nutzbar sind. WCAG (Web Content Accessibility Guidelines) ist der Standard dafür.",
+        "tags": [
+          "Web",
+          "UX",
+          "Qualität"
+        ]
+      },
+      {
+        "term": "Git Flow",
+        "desc": "Ein Branching-Modell für Git, das strikte Rollen für Branches (master, develop, feature, release, hotfix) vorgibt.",
+        "tags": [
+          "Git",
+          "Workflow"
+        ]
+      },
+      {
+        "term": "Trunk-based Development",
+        "desc": "Ein Branching-Modell, bei dem alle Entwickler kleine Änderungen direkt (oder kurzlebig) in den Hauptbranch (Trunk) pushen.",
+        "tags": [
+          "Git",
+          "Workflow"
+        ]
+      },
+      {
+        "term": "CI/CD (Continuous Integration / Continuous Deployment)",
+        "desc": "Automatisierte Prozesse zum Bauen, Testen (CI) und Ausliefern (CD) von Softwareänderungen.",
+        "tags": [
+          "DevOps",
+          "Automatisierung"
+        ]
+      },
+      {
+        "term": "GitHub Actions",
+        "desc": "Eine Plattform für CI/CD direkt in GitHub, um Workflows (Pipelines) durch Ereignisse auszulösen.",
+        "tags": [
+          "DevOps",
+          "Tooling"
+        ]
+      }
+    ]
   }
 ];
