@@ -1,0 +1,16 @@
+{
+  "name": "Developer-Wiki",
+  "short_name": "DevWiki",
+  "description": "Enzyklopädie für Entwickler-Begriffe, IT-Wissen und Shortcuts.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#010409",
+  "theme_color": "#0d1117",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzBkMTExNyIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iSmV0QnJhaW5zIE1vbm8sIG1vbm9zcGFjZSIgZm9udC1zaXplPSI0MCIgZmlsbD0iIzU4YTZmZiIgZHk9Ii4zZW0iIHRleHQtYW5jaG9yPSJtaWRkbGUiPkRXPC90ZXh0Pjwvc3ZnPg==",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -34,6 +34,13 @@
         main { flex: 1; overflow-y: auto; padding: 40px 60px; display: flex; flex-direction: column; background: var(--content-bg); }
         .header-area { margin-bottom: 30px; }
         h1 { font-size: 1.8rem; margin: 0; color: var(--text-dark); font-weight: 700; }
+
+        /* Controls area */
+        .controls-area { display: flex; gap: 15px; margin-top: 15px; }
+        .control-toggle { display: flex; align-items: center; cursor: pointer; color: var(--text-muted); font-size: 0.9rem; user-select: none; }
+        .control-toggle input { margin-right: 8px; cursor: pointer; }
+        .control-toggle:hover span { color: var(--text-dark); }
+
         .search-box { width: 100%; max-width: 600px; padding: 10px 16px; border-radius: var(--radius); border: 1px solid var(--border-color); background: var(--bg); color: var(--text-dark); font-size: 0.95rem; outline: none; margin-top: 20px; transition: all 0.2s; font-family: 'Inter', sans-serif; }
         .search-box::placeholder { color: var(--text-muted); }
         .search-box:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.3); }
@@ -51,10 +58,32 @@
         .card[onclick] { cursor: pointer; }
         .card[onclick]:hover { border-color: #8b949e; background: #1c2128; }
 
-        .term { font-weight: 600; color: var(--primary); background: rgba(88, 166, 255, 0.1); padding: 2px 8px; border-radius: 4px; display: inline-block; margin-bottom: 10px; font-size: 0.8rem; }
+        .term { font-weight: 600; color: var(--primary); background: rgba(88, 166, 255, 0.1); padding: 2px 8px; border-radius: 4px; display: inline-block; margin-bottom: 10px; font-size: 0.8rem; padding-right: 30px;}
 
-        .desc { font-size: 0.85rem; line-height: 1.5; color: var(--text-muted); }
+        /* Top right card actions (Star & Copy) */
+        .card-actions { position: absolute; top: 16px; right: 16px; display: flex; gap: 8px; }
+        .star-btn, .copy-btn { background: none; border: none; font-size: 1.2rem; cursor: pointer; color: var(--text-muted); padding: 0; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
+        .star-btn:hover { color: #f1e05a; transform: scale(1.1); }
+        .star-btn.active { color: #f1e05a; text-shadow: 0 0 5px rgba(241, 224, 90, 0.3); }
+        .copy-btn { font-size: 1rem; opacity: 0; }
+        .card:hover .copy-btn { opacity: 1; }
+        .copy-btn:hover { color: var(--text-dark); transform: scale(1.1); }
+        .copy-btn.copied { color: #2ea043; } /* Green on success */
+
+        /* Tags */
+        .tags-container { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+        .tag-badge { background: #21262d; border: 1px solid var(--border-color); color: var(--text-muted); padding: 2px 6px; border-radius: 12px; font-size: 0.7rem; }
+
+        /* Description & Quiz Mode */
+        .desc { font-size: 0.85rem; line-height: 1.5; color: var(--text-muted); width: 100%; transition: filter 0.3s ease; }
         .desc b { color: var(--primary); font-family: 'JetBrains Mono', monospace; font-weight: 600; }
+
+        .quiz-mode .desc { filter: blur(6px); cursor: pointer; user-select: none; }
+        .quiz-mode .card:hover .desc { filter: blur(4px); }
+        .quiz-mode .desc.revealed { filter: none; cursor: text; user-select: auto; }
+
+        /* Search highlighting */
+        mark.highlight { background-color: rgba(88, 166, 255, 0.3); color: inherit; padding: 0; border-radius: 2px; }
 
         .content-section[style*="block"] .section-title {
             background: transparent;
@@ -100,6 +129,15 @@
         .close-btn:hover { color: var(--text-dark); }
 
         #pdfFrame { width: 100%; height: 100%; border: none; background: #fff; }
+
+        /* Back to top button */
+        .back-to-top {
+            display: none; position: fixed; bottom: 30px; right: 30px; z-index: 99; font-size: 1.2rem;
+            border: none; outline: none; background-color: var(--primary); color: white; cursor: pointer;
+            padding: 10px 15px; border-radius: 50%; opacity: 0.7; transition: opacity 0.3s, background-color 0.3s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+        .back-to-top:hover { opacity: 1; background-color: var(--primary-hover); }
 
         /* Scrollbars */
         ::-webkit-scrollbar { width: 10px; height: 10px; }
