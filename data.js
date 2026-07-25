@@ -1174,6 +1174,14 @@ const wikiData = [
         "tags": [
           "Unified Modeling Language"
         ]
+      },
+      {
+        "term": "Aktivitätendiagramm",
+        "desc": "Verhaltensdiagramm: Stellt den Ablauf eines Systems (Kontroll- und Datenfluss) Schritt für Schritt dar, ähnlich einem Programmablaufplan.",
+        "tags": [
+          "Unified Modeling Language",
+          "IHK"
+        ]
       }
     ]
   },
@@ -3053,9 +3061,10 @@ const wikiData = [
     "cards": [
       {
         "term": "1NF / 2NF / 3NF",
-        "desc": "Normalformen zur DB-Strukturierung.",
+        "desc": "1. NF: Atomare Werte. 2. NF: 1. NF + jedes Nichtschlüsselattribut ist vom gesamten Primärschlüssel voll funktional abhängig. 3. NF: 2. NF + keine transitiven Abhängigkeiten.",
         "tags": [
-          "Datenbanken"
+          "Datenbanken",
+          "Modellierung"
         ]
       },
       {
@@ -3476,6 +3485,24 @@ const wikiData = [
         "desc": "Datenbanken für unstrukturierte oder semi-strukturierte Daten (z.B. MongoDB, Redis).",
         "tags": [
           "Datenbanken"
+        ]
+      },
+      {
+        "term": "Entity-Relationship-Modell (ERM)",
+        "desc": "Konzeptionelles Datenmodell, das Entitäten (Objekte) und deren Relationen (Beziehungen) zueinander darstellt.",
+        "tags": [
+          "Datenbanken",
+          "Modellierung",
+          "IHK"
+        ]
+      },
+      {
+        "term": "Kardinalitäten",
+        "desc": "Geben in ER-Modellen an, wie viele Entitäten miteinander in Beziehung stehen (z. B. 1:1, 1:n, m:n).",
+        "tags": [
+          "Datenbanken",
+          "Modellierung",
+          "IHK"
         ]
       }
     ]
@@ -7370,6 +7397,58 @@ const wikiData = [
           "C#",
           "Konzepte"
         ]
+      },
+      {
+        "term": "Blazor",
+        "desc": "Framework für interaktive Web-UIs mit C# statt JavaScript. Kann clientseitig (WebAssembly) oder serverseitig (SignalR) laufen.",
+        "tags": [
+          "C#",
+          ".NET",
+          "Web"
+        ]
+      },
+      {
+        "term": "ASP.NET Core Middleware",
+        "desc": "Softwarekomponenten, die zu einer Anwendungspipeline zusammengesetzt werden, um Anfragen (Requests) und Antworten (Responses) zu verarbeiten.",
+        "tags": [
+          "C#",
+          ".NET",
+          "Web"
+        ]
+      },
+      {
+        "term": "XAML",
+        "desc": "Extensible Application Markup Language. Deklarative XML-basierte Sprache, oft genutzt für UIs in WPF, UWP und MAUI.",
+        "tags": [
+          "C#",
+          ".NET",
+          "UI"
+        ]
+      },
+      {
+        "term": "Records",
+        "desc": "Ein Referenztyp in C#, der für unveränderliche (immutable) Datenmodelle optimiert ist und standardmäßig wertbasierte Gleichheit bietet.",
+        "tags": [
+          "C#",
+          "Konzepte"
+        ]
+      },
+      {
+        "term": "Pattern Matching",
+        "desc": "C#-Feature zur Überprüfung von Typen und Werten, um Fallunterscheidungen kompakter und lesbarer zu schreiben (z. B. in switch-Expressions).",
+        "tags": [
+          "C#",
+          "Konzepte"
+        ]
+      },
+      {
+        "term": "IDisposable",
+        "desc": "Interface in .NET, das die Dispose-Methode bereitstellt, um nicht verwaltete Ressourcen (z. B. Dateihandles, DB-Verbindungen) explizit freizugeben.",
+        "tags": [
+          "C#",
+          ".NET",
+          "Memory"
+        ]
       }
     ]
   },
@@ -7417,6 +7496,218 @@ const wikiData = [
         "tags": [
           "DevOps",
           "Tooling"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sec_linux",
+    "nav_title": "🐧 Linux & Bash-Grundlagen",
+    "sec_title": "Linux & Bash-Grundlagen",
+    "cards": [
+      {
+        "term": "ls",
+        "desc": "Listet Dateien und Verzeichnisse im aktuellen Ordner auf (z. B. ls -la für versteckte Dateien und Details).",
+        "tags": [
+          "Linux",
+          "Bash"
+        ]
+      },
+      {
+        "term": "grep",
+        "desc": "Sucht nach Mustern in Dateien oder Ausgaben (z. B. grep 'Fehler' log.txt).",
+        "tags": [
+          "Linux",
+          "Bash"
+        ]
+      },
+      {
+        "term": "chmod",
+        "desc": "Ändert die Zugriffsrechte einer Datei (Lesen, Schreiben, Ausführen für Besitzer, Gruppe, Andere).",
+        "tags": [
+          "Linux",
+          "Bash"
+        ]
+      },
+      {
+        "term": "chown",
+        "desc": "Ändert den Besitzer und/oder die Gruppe einer Datei oder eines Verzeichnisses.",
+        "tags": [
+          "Linux",
+          "Bash"
+        ]
+      },
+      {
+        "term": "tar",
+        "desc": "Archivierungsprogramm, um mehrere Dateien zu einer zusammenzufassen oder zu komprimieren (z. B. tar -czvf archiv.tar.gz /ordner).",
+        "tags": [
+          "Linux",
+          "Bash"
+        ]
+      },
+      {
+        "term": "ssh",
+        "desc": "Secure Shell: Dient der sicheren (verschlüsselten) Fernsteuerung von Computern über ein Netzwerk.",
+        "tags": [
+          "Linux",
+          "Netzwerk"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sec_hardware",
+    "nav_title": "💾 Hardware & Backup-Konzepte",
+    "sec_title": "Hardware, Storage & Backup-Konzepte",
+    "cards": [
+      {
+        "term": "RAID 0",
+        "desc": "Striping: Verteilt Daten auf mehrere Festplatten ohne Redundanz. Erhöht die Geschwindigkeit, aber wenn eine Platte ausfällt, sind alle Daten weg.",
+        "tags": [
+          "Hardware",
+          "Storage"
+        ]
+      },
+      {
+        "term": "RAID 1",
+        "desc": "Mirroring: Spiegelt Daten auf zwei Festplatten. Fällt eine aus, sind die Daten noch auf der anderen vorhanden.",
+        "tags": [
+          "Hardware",
+          "Storage"
+        ]
+      },
+      {
+        "term": "RAID 5",
+        "desc": "Striping mit Parität: Verteilt Daten und Paritätsinformationen über mindestens drei Festplatten. Eine darf ausfallen, ohne dass Daten verloren gehen.",
+        "tags": [
+          "Hardware",
+          "Storage"
+        ]
+      },
+      {
+        "term": "Vollbackup",
+        "desc": "Sichert alle ausgewählten Daten komplett. Dauert am längsten, lässt sich aber am einfachsten wiederherstellen.",
+        "tags": [
+          "Backup",
+          "IHK"
+        ]
+      },
+      {
+        "term": "Inkrementelles Backup",
+        "desc": "Sichert nur die Daten, die sich seit dem letzten Backup (egal welches) geändert haben. Schnelle Sicherung, aber aufwendige Wiederherstellung.",
+        "tags": [
+          "Backup",
+          "IHK"
+        ]
+      },
+      {
+        "term": "Differentielles Backup",
+        "desc": "Sichert alle Daten, die sich seit dem letzten Vollbackup geändert haben. Guter Kompromiss zwischen Sicherungs- und Wiederherstellungszeit.",
+        "tags": [
+          "Backup",
+          "IHK"
+        ]
+      },
+      {
+        "term": "Generationenprinzip",
+        "desc": "Auch 'Großvater-Vater-Sohn'. Backup-Strategie, die regelmäßige tägliche, wöchentliche und monatliche Sicherungen kombiniert.",
+        "tags": [
+          "Backup",
+          "IHK"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sec_zahlen",
+    "nav_title": "🔢 Zahlensysteme & Codierung",
+    "sec_title": "Zahlensysteme, Codierung & Subnetting",
+    "cards": [
+      {
+        "term": "Binärsystem",
+        "desc": "Zahlensystem zur Basis 2. Verwendet nur die Ziffern 0 und 1. Die Grundlage der Digitaltechnik.",
+        "tags": [
+          "Grundlagen",
+          "Mathematik"
+        ]
+      },
+      {
+        "term": "Hexadezimalsystem",
+        "desc": "Zahlensystem zur Basis 16 (0-9 und A-F). Wird oft verwendet, um Binärzahlen kompakter darzustellen (z. B. MAC-Adressen, Farben).",
+        "tags": [
+          "Grundlagen",
+          "Mathematik"
+        ]
+      },
+      {
+        "term": "ASCII vs. UTF-8",
+        "desc": "ASCII kodiert 128 Zeichen mit 7 Bit. UTF-8 ist eine variable Zeichensatzkodierung, die jedes Unicode-Zeichen darstellen kann (1 bis 4 Byte).",
+        "tags": [
+          "Grundlagen",
+          "Codierung"
+        ]
+      },
+      {
+        "term": "Base64",
+        "desc": "Verfahren zur Kodierung von Binärdaten (z. B. Bilder) in eine Zeichenfolge aus 64 druckbaren ASCII-Zeichen.",
+        "tags": [
+          "Codierung",
+          "Web"
+        ]
+      },
+      {
+        "term": "IPv4 vs. IPv6",
+        "desc": "IPv4 nutzt 32-Bit-Adressen (ca. 4,3 Mrd. Adressen). IPv6 nutzt 128-Bit-Adressen und bietet einen schier unendlichen Adressraum.",
+        "tags": [
+          "Netzwerk",
+          "IHK"
+        ]
+      },
+      {
+        "term": "Subnetmaske / CIDR",
+        "desc": "Trennt eine IP-Adresse in einen Netz- und einen Host-Teil. CIDR (Classless Inter-Domain Routing) gibt die Maske als Suffix an (z. B. /24).",
+        "tags": [
+          "Netzwerk",
+          "IHK"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sec_cloudmodelle",
+    "nav_title": "☁️ Cloud-Dienstmodelle",
+    "sec_title": "Cloud-Dienstmodelle",
+    "cards": [
+      {
+        "term": "IaaS (Infrastructure as a Service)",
+        "desc": "Bereitstellung von virtueller Hardware (Server, Speicher, Netzwerk). Der Nutzer verwaltet Betriebssystem und Anwendungen.",
+        "tags": [
+          "Cloud",
+          "IHK"
+        ]
+      },
+      {
+        "term": "PaaS (Platform as a Service)",
+        "desc": "Bereitstellung einer Laufzeitumgebung (z. B. Webserver, Datenbanken). Entwickler konzentrieren sich nur auf ihren Code.",
+        "tags": [
+          "Cloud",
+          "IHK"
+        ]
+      },
+      {
+        "term": "SaaS (Software as a Service)",
+        "desc": "Bereitstellung einer fertigen Softwarelösung über das Internet (z. B. Office 365, GitHub). Keine lokale Installation nötig.",
+        "tags": [
+          "Cloud",
+          "IHK"
+        ]
+      },
+      {
+        "term": "FaaS (Function as a Service) / Serverless",
+        "desc": "Ausführung von einzelnem Code (Funktionen) als Reaktion auf Ereignisse. Abrechnung erfolgt nur nach tatsächlicher Ausführungszeit.",
+        "tags": [
+          "Cloud",
+          "Architektur"
         ]
       }
     ]
