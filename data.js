@@ -7449,6 +7449,58 @@ const wikiData = [
           ".NET",
           "Memory"
         ]
+      },
+      {
+        "term": "Async / Await & TPL",
+        "desc": "Keywords für asynchrone Programmierung in C#. Die Task Parallel Library (TPL) managt die asynchrone Ausführung im Hintergrund, verhindert UI-Freezes.",
+        "tags": [
+          "C#",
+          ".NET",
+          "Advanced"
+        ]
+      },
+      {
+        "term": "Generics",
+        "desc": "Erlauben es, Klassen, Interfaces und Methoden zu definieren, ohne den genauen Datentyp festzulegen (z.B. List<T>). Erhöht Typsicherheit und Wiederverwendbarkeit.",
+        "tags": [
+          "C#",
+          "Advanced"
+        ]
+      },
+      {
+        "term": "Extension Methods",
+        "desc": "Ermöglichen das Hinzufügen von Methoden zu bestehenden Typen, ohne einen neuen abgeleiteten Typ zu erstellen oder den originalen Typ zu ändern (z.B. LINQ).",
+        "tags": [
+          "C#",
+          "Advanced"
+        ]
+      },
+      {
+        "term": "Reflection",
+        "desc": "Ein Mechanismus in .NET, um zur Laufzeit Informationen über Typen (Klassen, Interfaces) auszulesen oder Instanzen dynamisch zu erstellen.",
+        "tags": [
+          "C#",
+          ".NET",
+          "Advanced"
+        ]
+      },
+      {
+        "term": "IEnumerable vs IQueryable",
+        "desc": "IEnumerable verarbeitet Daten im Arbeitsspeicher (Client). IQueryable übersetzt Queries (z.B. in SQL) und führt sie auf dem Datenbankserver aus (Server-Evaluation).",
+        "tags": [
+          "C#",
+          "LINQ",
+          "Datenbanken"
+        ]
+      },
+      {
+        "term": "Boxing & Unboxing",
+        "desc": "Boxing: Konvertierung eines Wertetyps (z.B. int) in einen Referenztyp (object). Unboxing: Der umgekehrte Weg. Beides kostet Performance.",
+        "tags": [
+          "C#",
+          "Performance",
+          "Memory"
+        ]
       }
     ]
   },
@@ -7708,6 +7760,388 @@ const wikiData = [
         "tags": [
           "Cloud",
           "Architektur"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sec_architecture",
+    "nav_title": "📐 Softwarearchitektur & Design Patterns",
+    "sec_title": "Softwarearchitektur & Design Patterns",
+    "cards": [
+      {
+        "term": "SOLID",
+        "desc": "Fünf Prinzipien für objektorientiertes Design (Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, Dependency Inversion).",
+        "tags": [
+          "Architektur",
+          "Design"
+        ]
+      },
+      {
+        "term": "DRY (Don't Repeat Yourself)",
+        "desc": "Prinzip zur Vermeidung von Redundanz. Jedes Stück Wissen sollte eine eindeutige, unzweideutige Repräsentation im System haben.",
+        "tags": [
+          "Prinzipien"
+        ]
+      },
+      {
+        "term": "KISS (Keep It Simple, Stupid)",
+        "desc": "Systeme funktionieren am besten, wenn sie einfach gehalten werden statt unnötig komplex zu sein.",
+        "tags": [
+          "Prinzipien"
+        ]
+      },
+      {
+        "term": "YAGNI (You Aren't Gonna Need It)",
+        "desc": "Programmiere nichts, was du aktuell nicht brauchst, in der Annahme, du könntest es später brauchen.",
+        "tags": [
+          "Prinzipien"
+        ]
+      },
+      {
+        "term": "MVC (Model-View-Controller)",
+        "desc": "Architekturmuster zur Trennung von Datenmodell, Benutzeroberfläche und Steuerung. Typisch für Webanwendungen.",
+        "tags": [
+          "Architektur",
+          "Muster"
+        ]
+      },
+      {
+        "term": "Singleton Pattern",
+        "desc": "Design Pattern, das sicherstellt, dass von einer Klasse nur genau eine Instanz existiert.",
+        "tags": [
+          "Design Pattern"
+        ]
+      },
+      {
+        "term": "Factory Pattern",
+        "desc": "Erzeugungsmuster, das eine Schnittstelle zur Erstellung von Objekten definiert, aber Unterklassen entscheiden lässt, welche Klasse instanziiert wird.",
+        "tags": [
+          "Design Pattern"
+        ]
+      },
+      {
+        "term": "Observer Pattern",
+        "desc": "Verhaltensmuster, bei dem ein Objekt (Subject) eine Liste von Abhängigen (Observers) führt und diese über Zustandsänderungen benachrichtigt.",
+        "tags": [
+          "Design Pattern"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sec_database",
+    "nav_title": "🗄️ Datenbanken & SQL",
+    "sec_title": "Datenbanken & SQL",
+    "cards": [
+      {
+        "term": "RDBMS vs. NoSQL",
+        "desc": "RDBMS (wie SQL Server) sind relational und nutzen feste Schemata. NoSQL (wie MongoDB) ist dokumenten-/key-value-basiert und oft flexibler.",
+        "tags": [
+          "Datenbanken",
+          "IHK"
+        ]
+      },
+      {
+        "term": "Normalisierung (1NF-3NF)",
+        "desc": "Prozess der Strukturierung von relationalen Datenbanken zur Reduzierung von Redundanzen und Verbesserung der Datenintegrität.",
+        "tags": [
+          "Datenbanken",
+          "IHK"
+        ]
+      },
+      {
+        "term": "ACID",
+        "desc": "Eigenschaften sicherer Datenbanktransaktionen: Atomicity (Atomarität), Consistency (Konsistenz), Isolation (Isolation), Durability (Dauerhaftigkeit).",
+        "tags": [
+          "Datenbanken",
+          "Konzepte"
+        ]
+      },
+      {
+        "term": "CAP-Theorem",
+        "desc": "In einem verteilten System können nur 2 von 3 Eigenschaften gleichzeitig garantiert werden: Consistency, Availability, Partition tolerance.",
+        "tags": [
+          "Verteilte Systeme"
+        ]
+      },
+      {
+        "term": "SQL Joins",
+        "desc": "Kombinieren von Zeilen aus zwei oder mehr Tabellen basierend auf einer verknüpften Spalte (INNER JOIN, LEFT JOIN, etc.).",
+        "tags": [
+          "SQL"
+        ]
+      },
+      {
+        "term": "CRUD",
+        "desc": "Die grundlegenden Operationen für persistente Speicherung: Create, Read, Update, Delete.",
+        "tags": [
+          "Grundlagen"
+        ]
+      },
+      {
+        "term": "Primary & Foreign Key",
+        "desc": "Primary Key (Primärschlüssel) identifiziert einen Datensatz eindeutig. Foreign Key (Fremdschlüssel) verweist auf den Primary Key einer anderen Tabelle.",
+        "tags": [
+          "Datenbanken"
+        ]
+      },
+      {
+        "term": "Indexing",
+        "desc": "Datenbankstruktur, die die Geschwindigkeit der Datenabfrage verbessert, aber Schreibvorgänge verlangsamen kann.",
+        "tags": [
+          "Performance"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sec_testing",
+    "nav_title": "🧪 Testing & Qualitätssicherung",
+    "sec_title": "Software Testing & Qualitätssicherung",
+    "cards": [
+      {
+        "term": "Unit Testing",
+        "desc": "Testen einzelner, isolierter Code-Einheiten (z.B. Methoden/Funktionen). In .NET oft mit xUnit oder NUnit.",
+        "tags": [
+          "Testing",
+          "Qualität"
+        ]
+      },
+      {
+        "term": "Integration Testing",
+        "desc": "Testet das Zusammenspiel mehrerer Komponenten oder Systeme, inklusive Datenbanken oder externen APIs.",
+        "tags": [
+          "Testing"
+        ]
+      },
+      {
+        "term": "E2E Testing (End-to-End)",
+        "desc": "Testet die gesamte Anwendung von vorne bis hinten aus der Nutzerperspektive.",
+        "tags": [
+          "Testing"
+        ]
+      },
+      {
+        "term": "TDD (Test-Driven Development)",
+        "desc": "Entwicklungsmethode: Erst wird ein fehlschlagender Test geschrieben, dann der Code implementiert, um den Test zu bestehen, gefolgt von Refactoring (Red-Green-Refactor).",
+        "tags": [
+          "Methodik"
+        ]
+      },
+      {
+        "term": "Mocking",
+        "desc": "Ersetzen von echten Abhängigkeiten (z.B. Datenbanken) durch simulierte Objekte (Mocks) für isolierte Unit-Tests. In .NET oft mit Moq.",
+        "tags": [
+          "Testing"
+        ]
+      },
+      {
+        "term": "Code Coverage",
+        "desc": "Metrik, die angibt, wie viel Prozent des Quellcodes durch automatisierte Tests ausgeführt werden.",
+        "tags": [
+          "Metriken"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sec_webapi",
+    "nav_title": "🌐 Webentwicklung & APIs",
+    "sec_title": "Webentwicklung & APIs",
+    "cards": [
+      {
+        "term": "REST (Representational State Transfer)",
+        "desc": "Architekturstil für verteilte Systeme, oft genutzt für Web-APIs mit standardisierten HTTP-Methoden und statuslosen Anfragen.",
+        "tags": [
+          "API",
+          "Web"
+        ]
+      },
+      {
+        "term": "GraphQL",
+        "desc": "Abfragesprache für APIs, die es Clients ermöglicht, genau die Daten anzufordern, die sie benötigen, nicht mehr und nicht weniger.",
+        "tags": [
+          "API",
+          "Web"
+        ]
+      },
+      {
+        "term": "gRPC",
+        "desc": "Modernes High-Performance RPC (Remote Procedure Call) Framework, nutzt HTTP/2 und Protocol Buffers. Gut für Microservices.",
+        "tags": [
+          "API",
+          "Performance"
+        ]
+      },
+      {
+        "term": "HTTP-Methoden",
+        "desc": "Standardisierte Aktionen: GET (Lesen), POST (Erstellen), PUT/PATCH (Aktualisieren), DELETE (Löschen).",
+        "tags": [
+          "HTTP",
+          "Web"
+        ]
+      },
+      {
+        "term": "HTTP-Statuscodes",
+        "desc": "2xx (Erfolg), 3xx (Umleitung), 4xx (Client-Fehler, z.B. 404 Not Found), 5xx (Server-Fehler, z.B. 500 Internal Server Error).",
+        "tags": [
+          "HTTP",
+          "Web"
+        ]
+      },
+      {
+        "term": "CORS (Cross-Origin Resource Sharing)",
+        "desc": "Sicherheitskonzept im Browser, das kontrolliert, ob eine Webseite auf Ressourcen einer anderen Domain (Origin) zugreifen darf.",
+        "tags": [
+          "Security",
+          "Web"
+        ]
+      },
+      {
+        "term": "WebSockets",
+        "desc": "Protokoll für bidirektionale, persistente Kommunikation zwischen Client und Server in Echtzeit (z.B. für Chats).",
+        "tags": [
+          "Protokolle",
+          "Echtzeit"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sec_agile",
+    "nav_title": "🏃‍♂️ Agile Methoden & Projektmanagement",
+    "sec_title": "Agile Methoden & Projektmanagement",
+    "cards": [
+      {
+        "term": "Scrum",
+        "desc": "Agiles Framework für Projektmanagement, aufgeteilt in kurze Iterationen (Sprints) mit definierten Rollen (Product Owner, Scrum Master, Developer).",
+        "tags": [
+          "Agile",
+          "IHK"
+        ]
+      },
+      {
+        "term": "Kanban",
+        "desc": "Methode zur Visualisierung von Arbeit (meist auf einem Board mit Spalten wie To Do, In Progress, Done) zur Optimierung des Arbeitsflusses (WIP-Limits).",
+        "tags": [
+          "Agile",
+          "IHK"
+        ]
+      },
+      {
+        "term": "Sprints",
+        "desc": "Feste Zeitrahmen (oft 2-4 Wochen) in Scrum, in denen ein inkrementelles, nutzbares Produkt-Inkrement erstellt wird.",
+        "tags": [
+          "Scrum"
+        ]
+      },
+      {
+        "term": "User Stories",
+        "desc": "Kurze, einfache Beschreibung einer Anforderung aus der Perspektive des Endnutzers ('Als [Rolle] möchte ich [Ziel], damit [Grund]').",
+        "tags": [
+          "Agile",
+          "Requirements"
+        ]
+      },
+      {
+        "term": "Retrospektive",
+        "desc": "Meeting am Ende eines Sprints, um den Prozess zu reflektieren und Verbesserungen für den nächsten Sprint zu finden.",
+        "tags": [
+          "Scrum"
+        ]
+      },
+      {
+        "term": "MVP (Minimum Viable Product)",
+        "desc": "Die erste Version eines Produkts mit gerade genug Funktionen, um Kunden zufriedenzustellen und Feedback für die weitere Entwicklung zu sammeln.",
+        "tags": [
+          "Produktmanagement"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sec_gitadvanced",
+    "nav_title": "🐙 Git Advanced",
+    "sec_title": "Git Advanced",
+    "cards": [
+      {
+        "term": "git rebase",
+        "desc": "Integriert Änderungen von einem Branch in einen anderen, indem die Commits neu auf die Spitze des Ziel-Branches aufgesetzt werden (linearer Verlauf).",
+        "tags": [
+          "Git",
+          "Workflow"
+        ]
+      },
+      {
+        "term": "git cherry-pick",
+        "desc": "Wendet die Änderungen eines spezifischen Commits auf den aktuellen Branch an, ohne den ganzen Branch zu mergen.",
+        "tags": [
+          "Git",
+          "Workflow"
+        ]
+      },
+      {
+        "term": "git stash",
+        "desc": "Speichert unvollendete Änderungen temporär ab, um den Arbeitsbereich sauber zu machen (z.B. um den Branch zu wechseln), ohne sie zu committen.",
+        "tags": [
+          "Git",
+          "Workflow"
+        ]
+      },
+      {
+        "term": "git reset vs. revert",
+        "desc": "Reset ändert die Historie (verschiebt den HEAD), Revert erstellt einen neuen Commit, der die Änderungen eines alten Commits rückgängig macht (sicherer für geteilte Branches).",
+        "tags": [
+          "Git",
+          "Recovery"
+        ]
+      },
+      {
+        "term": "git reflog",
+        "desc": "Protokolliert alle lokalen Updates des HEADs. Ein 'Sicherheitsnetz', um auch 'gelöschte' Commits oder misslungene Rebases wiederherzustellen.",
+        "tags": [
+          "Git",
+          "Recovery"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sec_uml",
+    "nav_title": "📊 UML (Unified Modeling Language)",
+    "sec_title": "UML Diagramme (IHK relevant)",
+    "cards": [
+      {
+        "term": "Klassendiagramm",
+        "desc": "Strukturdiagramm, das die statische Struktur eines Systems zeigt: Klassen, ihre Attribute, Methoden und Beziehungen zueinander (Vererbung, Assoziation).",
+        "tags": [
+          "UML",
+          "IHK"
+        ]
+      },
+      {
+        "term": "Use-Case-Diagramm (Anwendungsfalldiagramm)",
+        "desc": "Zeigt das Verhalten des Systems aus der Sicht der Benutzer (Akteure) und welche Funktionen (Use Cases) sie ausführen.",
+        "tags": [
+          "UML",
+          "IHK"
+        ]
+      },
+      {
+        "term": "Sequenzdiagramm",
+        "desc": "Verhaltensdiagramm, das die zeitliche Abfolge von Nachrichten zwischen Objekten darstellt, oft für einen spezifischen Anwendungsfall.",
+        "tags": [
+          "UML",
+          "IHK"
+        ]
+      },
+      {
+        "term": "Aktivitätsdiagramm",
+        "desc": "Stellt den Ablauf von Prozessen oder Workflows Schritt für Schritt dar (ähnlich einem PAP/Struktogramm, aber mächtiger).",
+        "tags": [
+          "UML",
+          "IHK"
         ]
       }
     ]
