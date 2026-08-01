@@ -8145,5 +8145,71 @@ const wikiData = [
         ]
       }
     ]
+  },
+  {
+    "id": "maui_bausteine",
+    "nav_title": "🧱 MAUI Code-Bausteine",
+    "sec_title": "MAUI C# & XAML Baukasten",
+    "cards": [
+      {
+        "term": "1. ViewModel (C#)",
+        "desc": "Das ViewModel verwaltet die Daten und Logik (MVVM) für eine Seite.<br><pre><code class='language-csharp'>// 📌 MODUL-STECKBRIEF\n// - Wofür ist dieser Baustein da? Er verwaltet die Daten und Logik (MVVM) für eine Seite, getrennt von der Benutzeroberfläche.\n// - Wo gehört der Code hin? `ViewModels/MyViewModel.cs`\n\n// 🧩 DER CODE-BAUSTEIN\nusing CommunityToolkit.Mvvm.ComponentModel; // 💡 ERKLÄRUNG: Importiert die Source Generators für MVVM\nusing CommunityToolkit.Mvvm.Input;          // 💡 ERKLÄRUNG: Importiert die Commands für Button-Klicks\n\nnamespace MyMauiApp.ViewModels;             // ✏️ ANPASSEN: 'MyMauiApp' durch deinen Projektnamen ersetzen\n\n// 💡 ERKLÄRUNG: 'partial' ist ZWINGEND notwendig, damit der Source Generator Code ergänzen kann!\n// ⚠️ ACHTUNG: Die Klasse muss 'public partial' sein und von 'ObservableObject' erben.\npublic partial class MyViewModel : ObservableObject \n{\n    // 💡 ERKLÄRUNG: Privates Feld für unsere Daten (kleingeschrieben)\n    // ⚠️ ACHTUNG: Das Attribut [ObservableProperty] generiert automatisch eine öffentliche Eigenschaft 'Title' (großgeschrieben)!\n    [ObservableProperty]\n    private string title = \"Hallo Welt\";     // ✏️ ANPASSEN: Hier den Startwert eintragen\n\n    // 💡 ERKLÄRUNG: Konstruktor - Wird aufgerufen, wenn das ViewModel erstellt wird.\n    public MyViewModel() \n    {\n        // 💡 ERKLÄRUNG: Hier können Startwerte geladen oder Services initialisiert werden.\n    }\n\n    // 💡 ERKLÄRUNG: Eine Methode, die durch einen Button in der UI aufgerufen werden soll.\n    // ⚠️ ACHTUNG: [RelayCommand] generiert automatisch ein 'ClickMeCommand' (mit 'Command' am Ende), das im XAML gebunden wird.\n    [RelayCommand]\n    private void ClickMe()                   // ✏️ ANPASSEN: Name der Methode ändern\n    {\n        // 💡 ERKLÄRUNG: Wir ändern die (generierte) Eigenschaft 'Title', die UI aktualisiert sich sofort.\n        Title = \"Button wurde geklickt!\";    \n    }\n}\n\n// 🛠️ STELLSCHRAUBEN-CHECKLISTE\n// - `MyMauiApp.ViewModels`: Deinen Namespace anpassen.\n// - `MyViewModel`: Namen passend zu deiner Seite wählen (z.B. `LoginViewModel`).\n// - `title` / `Title`: Eigene Datenfelder definieren.\n// - `ClickMe`: Eigene Methoden-Namen für deine Button-Aktionen vergeben.</code></pre>",
+        "tags": [
+          "MAUI",
+          "C#",
+          "MVVM",
+          ".NET 10"
+        ]
+      },
+      {
+        "term": "2. View (XAML)",
+        "desc": "Die visuelle Benutzeroberfläche der Seite mit Compiled Bindings.<br><pre><code class='language-xml'>&lt;!-- 📌 MODUL-STECKBRIEF --&gt;\n&lt;!-- - Wofür ist dieser Baustein da? Die grafische Benutzeroberfläche (UI) deiner Seite. --&gt;\n&lt;!-- - Wo gehört der Code hin? `Views/MyPage.xaml` --&gt;\n\n&lt;!-- 🧩 DER CODE-BAUSTEIN --&gt;\n&lt;!-- 💡 ERKLÄRUNG: Der Kopfbereich definiert die Seite und importiert Namespaces. --&gt;\n&lt;ContentPage xmlns=\"http://schemas.microsoft.com/dotnet/2021/maui\"\n             xmlns:x=\"http://schemas.microsoft.com/winfx/2009/xaml\"\n             xmlns:viewmodels=\"clr-namespace:MyMauiApp.ViewModels\" \n             x:Class=\"MyMauiApp.Views.MyPage\"\n             x:DataType=\"viewmodels:MyViewModel\" \n             Title=\"Meine Seite\"&gt;\n    &lt;!-- ✏️ ANPASSEN: 'MyMauiApp' im xmlns:viewmodels und x:Class anpassen. --&gt;\n    &lt;!-- ⚠️ ACHTUNG: 'x:DataType' ist extrem wichtig für Compiled Bindings! Es sagt dem XAML, welches ViewModel genutzt wird. --&gt;\n\n    &lt;!-- 💡 ERKLÄRUNG: VerticalStackLayout stapelt alle Elemente untereinander. --&gt;\n    &lt;VerticalStackLayout Padding=\"30\" Spacing=\"20\"&gt;\n        \n        &lt;!-- 💡 ERKLÄRUNG: Ein Text-Element. 'Text=\"{Binding Title}\"' verbindet es mit der Eigenschaft 'Title' im ViewModel. --&gt;\n        &lt;Label Text=\"{Binding Title}\" \n               FontSize=\"24\" \n               HorizontalOptions=\"Center\" /&gt;\n\n        &lt;!-- 💡 ERKLÄRUNG: Ein Button. 'Command=\"{Binding ClickMeCommand}\"' ruft die [RelayCommand]-Methode im ViewModel auf. --&gt;\n        &lt;Button Text=\"Klick mich!\" \n                Command=\"{Binding ClickMeCommand}\" \n                HorizontalOptions=\"Center\" /&gt;\n                \n    &lt;/VerticalStackLayout&gt;\n&lt;/ContentPage&gt;\n\n&lt;!-- 🛠️ STELLSCHRAUBEN-CHECKLISTE --&gt;\n&lt;!-- - `xmlns:viewmodels`: Den Pfad zu deinen ViewModels anpassen. --&gt;\n&lt;!-- - `x:Class`: Den Namespace und Klassennamen der Code-Behind Datei eintragen. --&gt;\n&lt;!-- - `x:DataType`: Den genauen Namen deines ViewModels angeben. --&gt;</code></pre>",
+        "tags": [
+          "MAUI",
+          "XAML",
+          "MVVM",
+          ".NET 10"
+        ]
+      },
+      {
+        "term": "3. View Code-Behind (C#)",
+        "desc": "Verbindet die UI mit dem ViewModel über Dependency Injection.<br><pre><code class='language-csharp'>// 📌 MODUL-STECKBRIEF\n// - Wofür ist dieser Baustein da? Er verbindet die XAML-UI mit dem C# ViewModel per Dependency Injection.\n// - Wo gehört der Code hin? `Views/MyPage.xaml.cs` (direkt unter dem XAML)\n\n// 🧩 DER CODE-BAUSTEIN\nusing MyMauiApp.ViewModels; // ✏️ ANPASSEN: Namespace für dein ViewModel\n\nnamespace MyMauiApp.Views;  // ✏️ ANPASSEN: Dein Namespace\n\n// 💡 ERKLÄRUNG: partial class bedeutet, dass der Rest der Klasse aus dem XAML generiert wird.\npublic partial class MyPage : ContentPage\n{\n    // 💡 ERKLÄRUNG: Der Konstruktor erwartet das ViewModel. Das nennt man Dependency Injection (DI).\n    // ⚠️ ACHTUNG: Das System (MauiProgram) gibt uns das ViewModel automatisch, wir müssen es nicht mit 'new' erstellen!\n    public MyPage(MyViewModel viewModel) // ✏️ ANPASSEN: 'MyViewModel' durch dein ViewModel ersetzen\n    {\n        // 💡 ERKLÄRUNG: Diese Methode lädt die XAML-Oberfläche. Immer als erstes aufrufen!\n        InitializeComponent();\n\n        // 💡 ERKLÄRUNG: BindingContext ist der \"Daten-Lieferant\" für das XAML. Wir weisen ihm unser ViewModel zu.\n        BindingContext = viewModel;\n    }\n}\n\n// 🛠️ STELLSCHRAUBEN-CHECKLISTE\n// - `MyMauiApp.ViewModels`: Namespace importieren.\n// - `MyMauiApp.Views`: Eigenen Namespace eintragen.\n// - `MyPage`: Name der Seite anpassen.\n// - `MyViewModel`: Dein spezielles ViewModel im Konstruktor anfordern.</code></pre>",
+        "tags": [
+          "MAUI",
+          "C#",
+          "Dependency Injection",
+          ".NET 10"
+        ]
+      },
+      {
+        "term": "4. Dependency Injection (MauiProgram.cs)",
+        "desc": "Registrierung von Views und ViewModels im IoC Container.<br><pre><code class='language-csharp'>// 📌 MODUL-STECKBRIEF\n// - Wofür ist dieser Baustein da? Der Startpunkt der App. Hier werden alle Seiten und ViewModels registriert (Dependency Injection Container).\n// - Wo gehört der Code hin? `MauiProgram.cs` (Hauptverzeichnis)\n\n// 🧩 DER CODE-BAUSTEIN\nusing Microsoft.Extensions.Logging;\nusing MyMauiApp.Views;       // ✏️ ANPASSEN: Namespace deiner Views\nusing MyMauiApp.ViewModels;  // ✏️ ANPASSEN: Namespace deiner ViewModels\n\nnamespace MyMauiApp;         // ✏️ ANPASSEN: Dein Projekt-Namespace\n\npublic static class MauiProgram\n{\n    // 💡 ERKLÄRUNG: Diese Methode erstellt und konfiguriert die MAUI-App.\n    public static MauiApp CreateMauiApp()\n    {\n        var builder = MauiApp.CreateBuilder();\n        builder\n            .UseMauiApp&lt;App&gt;()\n            .ConfigureFonts(fonts =&gt;\n            {\n                fonts.AddFont(\"OpenSans-Regular.ttf\", \"OpenSansRegular\");\n                fonts.AddFont(\"OpenSans-Semibold.ttf\", \"OpenSansSemibold\");\n            });\n\n        // 💡 ERKLÄRUNG: Registrierung für Dependency Injection!\n        // ⚠️ ACHTUNG: JEDE Seite und JEDES ViewModel muss hier registriert werden, sonst gibt es einen Absturz (Exception)!\n        \n        // 💡 ERKLÄRUNG: AddTransient bedeutet: Jedes Mal, wenn die Seite aufgerufen wird, wird eine NEUE Instanz erstellt.\n        builder.Services.AddTransient&lt;MyViewModel&gt;(); // ✏️ ANPASSEN: Dein ViewModel\n        builder.Services.AddTransient&lt;MyPage&gt;();      // ✏️ ANPASSEN: Deine View\n\n        // 💡 ALTERNATIVE: AddSingleton bedeutet: Es gibt nur EINE Instanz für die gesamte Laufzeit (z.B. für Main-Seiten oder Services).\n        // builder.Services.AddSingleton&lt;MyViewModel&gt;(); \n\n        return builder.Build();\n    }\n}\n\n// 🛠️ STELLSCHRAUBEN-CHECKLISTE\n// - `MyMauiApp.Views` &amp; `ViewModels`: Namespaces importieren.\n// - `builder.Services.AddTransient`: Für jede neue Page &amp; ViewModel ein eigenes Paar hinzufügen.</code></pre>",
+        "tags": [
+          "MAUI",
+          "C#",
+          "Dependency Injection",
+          ".NET 10"
+        ]
+      },
+      {
+        "term": "5. App Start (Ohne AppShell)",
+        "desc": "Setzt die Startseite der App ohne Verwendung der AppShell.<br><pre><code class='language-csharp'>// 📌 MODUL-STECKBRIEF\n// - Wofür ist dieser Baustein da? Startet die App und legt die erste Seite fest (ohne AppShell).\n// - Wo gehört der Code hin? `App.xaml.cs`\n\n// 🧩 DER CODE-BAUSTEIN\nusing MyMauiApp.Views; // ✏️ ANPASSEN: Namespace deiner Views importieren\n\nnamespace MyMauiApp;   // ✏️ ANPASSEN: Dein Projekt-Namespace\n\npublic partial class App : Application\n{\n    // 💡 ERKLÄRUNG: Der Konstruktor der gesamten App. Er bekommt die Startseite per Dependency Injection.\n    // ⚠️ ACHTUNG: Wir fordern 'MyPage' direkt hier an, da das System (MauiProgram) sie für uns erstellt.\n    public App(MyPage startingPage) // ✏️ ANPASSEN: Startseite definieren\n    {\n        InitializeComponent();\n\n        // 💡 ERKLÄRUNG: Wir umhüllen unsere Startseite mit einer NavigationPage, um später zu anderen Seiten navigieren zu können.\n        // ⚠️ ACHTUNG: Da wir kein AppShell verwenden, ist dies der Standardweg für Navigation!\n        MainPage = new NavigationPage(startingPage);\n    }\n}\n\n// 🛠️ STELLSCHRAUBEN-CHECKLISTE\n// - `MyMauiApp.Views`: Namespace importieren.\n// - `MyPage startingPage`: Deine gewünschte Startseite als Parameter einfügen.</code></pre>",
+        "tags": [
+          "MAUI",
+          "C#",
+          ".NET 10"
+        ]
+      },
+      {
+        "term": "6. Navigation (Ohne AppShell)",
+        "desc": "Einfache Navigation zu einer neuen Seite über den DI Container.<br><pre><code class='language-csharp'>// 📌 MODUL-STECKBRIEF\n// - Wofür ist dieser Baustein da? Um von einer Seite zur nächsten zu wechseln (ohne AppShell).\n// - Wo gehört der Code hin? Z.B. in einen Command-Handler im ViewModel (View-First Navigation).\n\n// 🧩 DER CODE-BAUSTEIN\n// 💡 ERKLÄRUNG: Da wir `NavigationPage` in der App.xaml.cs verwenden, können wir `Application.Current.MainPage.Navigation` nutzen.\n// ⚠️ ACHTUNG: Dies ist ein einfacher Weg (View-First). Für strenges ViewModel-First bräuchte man einen 'INavigationService'.\n\n// Beispiel-Aufruf in einem [RelayCommand] im ViewModel:\n[RelayCommand]\nprivate async Task GoToNextPage()\n{\n    // 💡 ERKLÄRUNG: Wir holen uns die Instanz der Zielseite aus dem Dependency Injection Container.\n    // ⚠️ ACHTUNG: Die Zielseite (NextPage) MUSS in der MauiProgram.cs registriert sein!\n    var serviceProvider = Application.Current.Handler.MauiContext.Services;\n    var nextPage = serviceProvider.GetService&lt;NextPage&gt;(); // ✏️ ANPASSEN: Deine Zielseite\n\n    // 💡 ERKLÄRUNG: Navigiert zur neuen Seite (schiebt sie oben auf den Stapel).\n    await Application.Current.MainPage.Navigation.PushAsync(nextPage);\n}\n\n// 🛠️ STELLSCHRAUBEN-CHECKLISTE\n// - `NextPage`: Durch den Namen deiner Ziel-View ersetzen.\n// - Sicherstellen, dass `NextPage` in `MauiProgram.cs` als Transient/Singleton registriert ist.</code></pre>",
+        "tags": [
+          "MAUI",
+          "C#",
+          "Navigation",
+          ".NET 10"
+        ]
+      }
+    ]
   }
 ];
