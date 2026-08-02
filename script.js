@@ -83,6 +83,7 @@ function renderContent() {
     });
 
     mainContainer.innerHTML = mainHtml;
+    if (window.Prism) Prism.highlightAll();
 }
 
 function setupRouting() {
